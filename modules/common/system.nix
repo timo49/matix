@@ -39,7 +39,7 @@ in
   };
 
   # Set console keymap to de
-  console.keyMap = vars.keyMap;
+  console.keyMap = "de"; #vars.keyMap;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.${vars.username} = {
