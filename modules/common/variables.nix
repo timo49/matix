@@ -1,7 +1,7 @@
 {
   # System Information
   username = "matteo";
-  keymap = "at";
+  keyMap = "at";
 
   # Hyprland
   resolution = "1920x1080@60";
