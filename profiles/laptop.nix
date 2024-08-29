@@ -2,13 +2,13 @@
 
 {
   imports = [
-    # minimum
+    # core
     ../modules/common/system.nix
     ../modules/system/packages.nix
     ../modules/system/services.nix
     ../modules/system/hardware-configuration.nix
 
-    # extra
+    # desktop enviroment
     ../modules/system/wm/hyprland.nix
   ];
 }

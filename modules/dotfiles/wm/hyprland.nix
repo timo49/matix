@@ -132,7 +132,7 @@ in {
 
       # https://wiki.hyprland.org/Configuring/Variables/#input
       input {
-          kb_layout = ${vars.keymap}
+          kb_layout = ${vars.keyMap}
           kb_variant =
           kb_model =
           kb_options =

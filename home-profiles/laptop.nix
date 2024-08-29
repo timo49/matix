@@ -7,13 +7,19 @@
 
     # extra
     ../modules/user/utilities/git.nix
+
+    # desktop enviroment
     ../modules/user/wm/hyprland.nix
+    ../modules/user/statusbar/waybar.nix
     ../modules/user/apps/kitty.nix
-    ../modules/user/apps/fish.nix
-    ../modules/user/apps/starship.nix
+    ../modules/user/shells/fish.nix
+    ../modules/user/utilities/starship.nix
   ];
 
   home.packages = [
+    # enviroment
+    pkgs.waybar
+
     # core apps
     pkgs.kitty
     pkgs.fish
