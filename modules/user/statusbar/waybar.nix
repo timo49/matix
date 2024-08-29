@@ -7,5 +7,5 @@
     # settings = ../../dotfiles/statusbar/waybar/config.jsonc;
   };
   
-  home.file."./config/waybar/config.jsonc".source = ../../dotfiles/statusbar/waybar/config.jsonc;
+  home.file.".config/waybar/config.jsonc".source = ../../dotfiles/statusbar/waybar/config.jsonc;
 }
