@@ -31,7 +31,7 @@ in {
       ### AUTOSTART ###
       #################
 
-      exec-once = waybar
+      exec-once = waybar & hyprpaper
 
       #############################
       ### ENVIRONMENT VARIABLES ###
