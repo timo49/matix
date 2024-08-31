@@ -9,6 +9,9 @@
   browser = "qutebrowser";
   fileManager = "dolphin";
 
+  # Hyprpaper (Wallpaper)
+  wallpaperPath = "~/.wallpapers/dark-fantasy.png";
+
   # Git Configuration
   gitUser = "Permafrozen";
   gitMail = "m8tt8o@gmail.com";
