@@ -3,6 +3,6 @@
 {
   imports = [
     # Profile
-    ./profiles/laptop.nix
+    ./profiles/system/laptop.nix
   ];
 }

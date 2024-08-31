@@ -3,6 +3,6 @@
 {
   imports = [
     # Profile
-    ./home-profiles/laptop.nix
+    ./profiles/home-manager/laptop.nix
   ];
 }
