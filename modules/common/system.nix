@@ -12,7 +12,11 @@ in
       device = "nodev";
       efiSupport = true;
     };
-    efi.canTouchEfiVariables = true;
+
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot";
+    };
   };
 
   networking.hostName = "nixos"; # Define your hostname.
