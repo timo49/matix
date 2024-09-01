@@ -13,7 +13,7 @@
   fileManager = "dolphin";
 
   # Hyprpaper (Wallpaper)
-  wallpaperPath = "~/.wallpapers/dark-fantasy.png";
+  wallpaperPath = "~/.wallpapers/nixos.png";
 
   # Git Configuration
   gitUser = "Permafrozen";
