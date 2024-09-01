@@ -14,7 +14,7 @@
     * {
       border: none;
       border-radius: 0;
-      font-family: Source Code Pro;
+      font-family: Hack Nerd Font;
     }
 
     tooltip {

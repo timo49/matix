@@ -14,6 +14,7 @@
     };
 
     extraConfig = ''
+      font_family family = "Hack Nerd Font"
       shell fish
       confirm_os_window_close 0
     '';
