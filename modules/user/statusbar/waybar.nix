@@ -7,8 +7,6 @@
 
   programs.waybar = {
     enable = true;
-    # style = ../../dotfiles/statusbar/waybar/style.css;
-    # settings = ../../dotfiles/statusbar/waybar/config.jsonc;
   };
   
   # Cascading Style Sheet
@@ -17,7 +15,6 @@
       border: none;
       border-radius: 0;
       font-family: Source Code Pro;
-      color: #${config.colorScheme.palette.base05};
     }
 
     tooltip {
@@ -32,9 +29,11 @@
 
     #workspaces button {
       padding: 0 5px;
+      background: #${config.colorScheme.palette.base00};
+      color: #${config.colorScheme.palette.base05};
     }
 
-    #workspaces button.focused {
+    #workspaces button.active {
       background: #${config.colorScheme.palette.base05};
       color: #${config.colorScheme.palette.base00};
     }
