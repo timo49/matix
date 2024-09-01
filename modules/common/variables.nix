@@ -3,6 +3,9 @@
   username = "matteo";
   keyMap = "at";
 
+  # Theme
+  colorScheme = "dracula";
+
   # Hyprland
   resolution = "1920x1080@60";
   terminal = "kitty";

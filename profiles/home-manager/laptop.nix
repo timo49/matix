@@ -8,13 +8,16 @@
     # extra
     ../../modules/user/utilities/git.nix
 
-    # desktop enviroment
+    # hyprland  enviroment
     ../../modules/user/wm/hyprland.nix
     ../../modules/user/statusbar/waybar.nix
     ../../modules/user/utilities/hyprpaper.nix
     ../../modules/user/apps/kitty.nix
     ../../modules/user/shells/fish.nix
     ../../modules/user/utilities/starship.nix
+
+    # apps
+    ../../modules/user/apps/qutebrowser.nix
   ];
 
   home.packages = [
