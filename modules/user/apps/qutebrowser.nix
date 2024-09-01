@@ -8,7 +8,8 @@
   programs.qutebrowser = {
     enable = true;
     extraConfig = ''
-      c.colors.webpage.preferred_color_scheme = "${config.colorScheme.variant}";
+      c.fonts.default_family = "Hack Nerd Font"
+      c.colors.webpage.preferred_color_scheme = "${config.colorScheme.variant}"
 
       base00 = "#${config.colorScheme.palette.base00}"
       base01 = "#${config.colorScheme.palette.base01}"
