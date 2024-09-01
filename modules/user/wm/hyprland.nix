@@ -3,69 +3,47 @@
 let
   vars = import ../../common/variables.nix;
 in {
+  imports = [
+    ../../common/theme.nix
+  ];
+  
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {};
 
     extraConfig = ''
 
-      ################
-      ### MONITORS ###
-      ################
-
-      # See https://wiki.hyprland.org/Configuring/Monitors/
+      # Monitor Settings
       monitor=eDP-1,${vars.resolution},0x0,1
 
-
-      ###################
-      ### MY PROGRAMS ###
-      ###################
-
-      # See https://wiki.hyprland.org/Configuring/Keywords/
-
-      # Set programs that you use
+      # Programs 
       $terminal = ${vars.terminal}
       $browser = ${vars.browser}
       # $fileManager = ${vars.fileManager}
       # $menu = wofi --show drun
 
-
-      #################
-      ### AUTOSTART ###
-      #################
-
+      # Autostart
       exec-once = waybar & hyprpaper
 
-      #############################
-      ### ENVIRONMENT VARIABLES ###
-      #############################
-
-      # See https://wiki.hyprland.org/Configuring/Environment-variables/
-
+      # Enviroment Variables
       env = XCURSOR_SIZE,24
       env = HYPRCURSOR_SIZE,24
 
-      #####################
-      ### LOOK AND FEEL ###
-      #####################
-
-      # Refer to https://wiki.hyprland.org/Configuring/Variables/
-
-      # https://wiki.hyprland.org/Configuring/Variables/#general
+      # General
       general { 
           gaps_in = 5
           gaps_out = 20
 
           border_size = 2
 
-          # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
-          col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
-          col.inactive_border = rgba(595959aa)
 
-          # Set to true enable resizing windows by clicking and dragging on borders and gaps
+          col.active_border = 0xff${config.colorScheme.palette.base04}
+          col.inactive_border = 0xff${config.colorScheme.palette.base03}
+
+
           resize_on_border = false 
 
-          # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
+
           allow_tearing = false
 
           layout = dwindle

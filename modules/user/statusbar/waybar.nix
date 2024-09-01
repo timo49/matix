@@ -19,23 +19,25 @@
 
     tooltip {
       background: #${config.colorScheme.palette.base00};
-      border: 1px solid #${config.colorScheme.palette.base03};
+      border: 2px solid #${config.colorScheme.palette.base03};
     }
 
     window#waybar {
       background: #${config.colorScheme.palette.base00};
       color: #${config.colorScheme.palette.base05};
+      border-bottom: 2px solid #${config.colorScheme.palette.base03}
     }
 
     #workspaces button {
       padding: 0 5px;
       background: #${config.colorScheme.palette.base00};
       color: #${config.colorScheme.palette.base05};
+      border-bottom: 2px solid #${config.colorScheme.palette.base03};
     }
 
     #workspaces button.active {
-      background: #${config.colorScheme.palette.base05};
-      color: #${config.colorScheme.palette.base00};
+      color: #${config.colorScheme.palette.base04};
+      border-bottom: 2px solid #${config.colorScheme.palette.base04};
     }
   '';
 
