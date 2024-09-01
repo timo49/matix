@@ -8,6 +8,9 @@
   programs.qutebrowser = {
     enable = true;
     extraConfig = ''
+      c.url.start_pages = ["about:blank"]
+      c.url.default_page = "about:blank"
+
       c.fonts.default_family = "Hack Nerd Font"
       c.colors.webpage.preferred_color_scheme = "${config.colorScheme.variant}"
 
