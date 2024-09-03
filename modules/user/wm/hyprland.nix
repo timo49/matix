@@ -20,7 +20,7 @@ in {
       $terminal = ${vars.terminal}
       $browser = ${vars.browser}
       # $fileManager = ${vars.fileManager}
-      # $menu = wofi --show drun
+      $menu = wofi --show drun
 
       # Autostart
       exec-once = waybar & hyprpaper

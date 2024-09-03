@@ -16,6 +16,7 @@
     ../../modules/user/shells/fish.nix
     ../../modules/user/utilities/starship.nix
     ../../modules/user/utilities/dunst.nix
+    ../../modules/user/apps/wofi.nix
 
     # apps
     ../../modules/user/apps/qutebrowser.nix
