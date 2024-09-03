@@ -15,6 +15,7 @@
     ../../modules/user/apps/kitty.nix
     ../../modules/user/shells/fish.nix
     ../../modules/user/utilities/starship.nix
+    ../../modules/user/utilities/dunst.nix
 
     # apps
     ../../modules/user/apps/qutebrowser.nix
@@ -33,5 +34,6 @@
 
     # extra
     pkgs.acpi
+    pkgs.libnotify
   ];
 }
