@@ -11,34 +11,42 @@
   
   # Cascading Style Sheet
   home.file.".config/waybar/style.css".text = ''
-    * {
-      border: none;
-      border-radius: 0;
-      font-family: Hack Nerd Font;
-    }
+  * {
+    border: none;
+    border-radius: 0;
+    font-family: Hack Nerd Font;
+  }
 
-    tooltip {
-      background: #${config.colorScheme.palette.base00};
-      border: 2px solid #${config.colorScheme.palette.base03};
-    }
+  .module {
+    padding: 0 5px 0 0;
+  }
 
-    window#waybar {
-      background: #${config.colorScheme.palette.base00};
-      color: #${config.colorScheme.palette.base05};
-      border-bottom: 2px solid #${config.colorScheme.palette.base03}
-    }
+  tooltip {
+    background: #${config.colorScheme.palette.base00};
+    border: 2px solid #${config.colorScheme.palette.base03};
+  }
 
-    #workspaces button {
-      padding: 0 5px;
-      background: #${config.colorScheme.palette.base00};
-      color: #${config.colorScheme.palette.base05};
-      border-bottom: 2px solid #${config.colorScheme.palette.base03};
-    }
+  #workspaces {
+    border-left: 2px solid #${config.colorScheme.palette.base03};
+    border-top: 2px solid #${config.colorScheme.palette.base03};
+    border-bottom: 2px solid #${config.colorScheme.palette.base03};
+  }
 
-    #workspaces button.active {
-      color: #${config.colorScheme.palette.base04};
-      border-bottom: 2px solid #${config.colorScheme.palette.base04};
-    }
+  #workspaces button {
+    background: #${config.colorScheme.palette.base00};
+    color: #${config.colorScheme.palette.base05};
+  }
+
+  window#waybar {
+    background: #${config.colorScheme.palette.base00};
+    color: #${config.colorScheme.palette.base05};
+    border: 2px solid #${config.colorScheme.palette.base03}; 
+  }
+
+  #workspaces button.active {
+    color: #${config.colorScheme.palette.base04};
+    border-bottom: 2px solid #${config.colorScheme.palette.base04};
+  }
   '';
 
   # Configuration
@@ -46,6 +54,7 @@
     {
       "layer": "top",
       "position": "top",
+      "margin": "8",
 
       "modules-left": [
 	"hyprland/workspaces",
@@ -61,13 +70,14 @@
       ],
 
       "hyprland/window": {
-          "format": " {}",
+          "format": "{}",
           "max-length": 50
       },
 
       "battery": {
-          "format": "{capacity}% {icon} ",
-          "format-icons": ["", "", "", "", ""]
+          "format": "{icon} {capacity}%",
+          "format-icons": ["󰂃", "󰂃", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+          "tooltip-format": "{time}"
       },
 
       "clock": {

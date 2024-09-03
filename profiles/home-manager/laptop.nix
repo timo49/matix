@@ -18,6 +18,7 @@
 
     # apps
     ../../modules/user/apps/qutebrowser.nix
+    ../../modules/user/editor/neovim.nix
   ];
 
   home.packages = [
