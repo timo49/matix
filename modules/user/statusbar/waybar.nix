@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ config, lib, pkgs, ...}:
 
 {
   imports = [
@@ -24,26 +24,19 @@
     margin: 0 5px;
   }
 
+  window#waybar {
+    background: #${config.colorScheme.palette.base00};
+    color: #${config.colorScheme.palette.base05};
+    border-bottom: 2px solid #${config.colorScheme.palette.base03};
+  }
+
   tooltip {
     background: #${config.colorScheme.palette.base00};
     border: 2px solid #${config.colorScheme.palette.base03};
   }
 
-  #workspaces {
-    border-left: 2px solid #${config.colorScheme.palette.base03};
-    border-top: 2px solid #${config.colorScheme.palette.base03};
-    border-bottom: 2px solid #${config.colorScheme.palette.base03};
-  }
-
   #workspaces button {
-    background: #${config.colorScheme.palette.base00};
     color: #${config.colorScheme.palette.base05};
-  }
-
-  window#waybar {
-    background: #${config.colorScheme.palette.base00};
-    color: #${config.colorScheme.palette.base05};
-    border: 2px solid #${config.colorScheme.palette.base03}; 
   }
 
   #workspaces button.active {
