@@ -5,6 +5,7 @@
 
   # Theme
   colorScheme = "dracula";
+  opacity = "0.7";
 
   # Hyprland
   resolution = "1920x1080@60";
