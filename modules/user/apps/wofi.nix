@@ -9,7 +9,8 @@
     enable = true;
 
     settings = {
-      hide_scoll = true; 
+      hide_scoll = true;
+      allow_markup = true;
     };
 
     style  = ''
@@ -35,6 +36,7 @@
 
       #entry:selected {
         background: #${config.colorScheme.palette.base03};
+	color: #${config.colorScheme.palette.base04}:
 	border: none;
       }
     '';

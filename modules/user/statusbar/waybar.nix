@@ -17,8 +17,11 @@
     font-family: Hack Nerd Font;
   }
 
-  .module {
-    padding: 0 5px 0 0;
+  #battery,
+  #clock,
+  #wireplumber {
+    padding: 0 10px;
+    margin: 0 5px;
   }
 
   tooltip {
@@ -54,7 +57,6 @@
     {
       "layer": "top",
       "position": "top",
-      "margin": "8",
 
       "modules-left": [
 	"hyprland/workspaces",
@@ -65,6 +67,7 @@
       ],
 
       "modules-right": [
+        "wireplumber",
 	"battery",
         "clock"
       ],
@@ -81,7 +84,15 @@
       },
 
       "clock": {
-          "format-alt": "{:%a, %d. %b  %H:%M}"
+          "format": "󱑆 {:%H:%M }",
+          "format-alt": "󱑆 {:%a, %d. %b  %H:%M }",
+     },
+
+      "wireplumber": {
+        "format": "{icon} {volume}% ",
+        "format-muted": " ",
+        "scroll-step": "1",
+        "format-icons": ["", " ", " "]
       }
     }
   '';
