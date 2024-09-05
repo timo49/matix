@@ -23,18 +23,19 @@
     ../../modules/user/editor/neovim.nix
   ];
 
-  home.packages = [
+  home.packages = with pkgs; [
     # enviroment
-    pkgs.waybar
-    pkgs.hyprpaper
+    waybar
+    hyprpaper
 
     # core apps
-    pkgs.kitty
-    pkgs.fish
-    pkgs.qutebrowser
+    kitty
+    fish
+    qutebrowser
 
     # extra
-    pkgs.acpi
-    pkgs.libnotify
+    acpi
+    libnotify
+    vesktop
   ];
 }

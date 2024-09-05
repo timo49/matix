@@ -86,11 +86,50 @@
         "type": "github"
       }
     },
+    "nvchad-starter": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1723385181,
+        "narHash": "sha256-J0iB+5aRuirhF91CnFfG8hDmkY5jOT2QlHrkoku3WVw=",
+        "owner": "NvChad",
+        "repo": "starter",
+        "rev": "3e1667ef3c5c5f74ba0783eb50984f5e2700948c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NvChad",
+        "ref": "main",
+        "repo": "starter",
+        "type": "github"
+      }
+    },
+    "nvchad4nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nvchad-starter": "nvchad-starter"
+      },
+      "locked": {
+        "lastModified": 1725293416,
+        "narHash": "sha256-wQk5Tf4N90f25+R2SUF7AxN3EUQzpOkkCl5rI+qN+Vk=",
+        "owner": "nix-community",
+        "repo": "nix4nvchad",
+        "rev": "fc0aa8f5638d751dce60f483c148a46f87bfe456",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nix4nvchad",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "nix-colors": "nix-colors",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "nvchad4nix": "nvchad4nix"
       }
     }
   },

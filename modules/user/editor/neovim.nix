@@ -1,7 +1,12 @@
 { config, pkgs, ...}:
 
 {
-  programs.neovim = {
-    enable = true;
-  };
+  imports = [
+    inputs.nvchad4nix.homeManagerModule
+  ];
+  programs.nvchad.enable = true;
+
+  # programs.neovim = {
+  #  enable = true;
+  # };
 }
