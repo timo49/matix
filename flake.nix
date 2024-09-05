@@ -18,23 +18,20 @@
       lib = nixpkgs.lib;
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system}; #package architecture for homemanager
-      extraSpecialArgs = { inherit system;  inherit nix-colors; };  # <- passing inputs to the attribute set for home-manager
+      extraSpecialArgs = { inherit system; inherit pkgs;  inherit nix-colors; };  # <- passing inputs to the attribute set for home-manager
       specialArgs = { inherit system; }; # <- same but for Nixos
     in {
     nixosConfigurations = {
       nixos = lib.nixosSystem {
         inherit specialArgs;
 
-        modules = [
-	  ./configuration.nix
-        ];
+        modules = [ ./configuration.nix ];
 
       };
     };
    
     homeConfigurations = {
       ${vars.username} = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs; # passes declaration of the "pkgs" in the let binding as an argument
         inherit extraSpecialArgs;
 
 	modules = [ ./home.nix ];
