@@ -10,21 +10,16 @@
     };
 
     nix-colors.url = "github:misterio77/nix-colors";
-
-    nvchad4nix = {
-      url = "github:nix-community/nix4nvchad";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-colors, ...}@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-colors, ...}:
     let
       vars = import ./modules/common/variables.nix;
       lib = nixpkgs.lib;
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system}; #package architecture for homemanager
-      extraSpecialArgs = { inherit system; inherit inputs; inherit nix-colors; };  # <- passing inputs to the attribute set for home-manager
-      specialArgs = { inherit system; inherit inputs; }; # <- same but for Nixos
+      extraSpecialArgs = { inherit system;  inherit nix-colors; };  # <- passing inputs to the attribute set for home-manager
+      specialArgs = { inherit system; }; # <- same but for Nixos
     in {
     nixosConfigurations = {
       nixos = lib.nixosSystem {
@@ -32,16 +27,6 @@
 
         modules = [
 	  ./configuration.nix
-
-	  {  # <- # example to add the overlay to Nixpkgs:
-            nixpkgs = {
-              overlays = [
-                (final: prev: {
-                    nvchad = inputs.nvchad4nix.packages."${pkgs.system}".nvchad;
-                })
-              ];
-            };
-          }
         ];
 
       };
