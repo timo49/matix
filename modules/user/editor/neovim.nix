@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ inputs, config, pkgs, ...}:
 
 {
   imports = [
@@ -6,7 +6,4 @@
   ];
   programs.nvchad.enable = true;
 
-  # programs.neovim = {
-  #  enable = true;
-  # };
 }
