@@ -215,6 +215,9 @@ in {
       # Example windowrule v2
       # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
 
+      layerrule = blur,waybar
+      layerrule = blur,wofi
+
       windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
     '';
   };
