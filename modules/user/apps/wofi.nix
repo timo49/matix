@@ -13,31 +13,34 @@
       allow_markup = true;
     };
 
-    style  = ''
+    style  = 
+    let
+      vars = import ../../common/variables.nix;
+    in ''
       * {
         font-family: Hack Nerd Font;
-	color: #${config.colorScheme.palette.base05};
-	border: none;
+	      color: #${config.colorScheme.palette.base05};
+	      border: none;
       }
 
       #window {
-        background: #${config.colorScheme.palette.base00};
-	border: 2px solid #${config.colorScheme.palette.base03};
+        background: rgba(${vars.rgb}, ${vars.opacity});
+	      border: 2px solid #${config.colorScheme.palette.base03};
       }
 
       #outer-box {
-	border: 2px solid #${config.colorScheme.palette.base03};
+	      border: 2px solid #${config.colorScheme.palette.base03};
       }
 
       #input {
         background: #${config.colorScheme.palette.base00};
-	border: none;
+	      border: none;
       }
 
       #entry:selected {
         background: #${config.colorScheme.palette.base03};
-	color: #${config.colorScheme.palette.base04}:
-	border: none;
+	      color: #${config.colorScheme.palette.base04}:
+	      border: none;
       }
     '';
   };
