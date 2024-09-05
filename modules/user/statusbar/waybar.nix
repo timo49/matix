@@ -10,7 +10,10 @@
   };
   
   # Cascading Style Sheet
-  home.file.".config/waybar/style.css".text = ''
+  home.file.".config/waybar/style.css".text = 
+  let
+    vars = import ../../common/variables.nix;
+  in ''
   * {
     border: none;
     border-radius: 0;
@@ -25,7 +28,7 @@
   }
 
   window#waybar {
-    background: #${config.colorScheme.palette.base00};
+    background: rgba(${vars.rgb}, ${vars.opacity});
     color: #${config.colorScheme.palette.base05};
     border-bottom: 2px solid #${config.colorScheme.palette.base03};
   }

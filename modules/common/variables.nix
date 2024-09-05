@@ -6,7 +6,7 @@
   # Theme
   colorScheme = "dracula";
   opacity = "0.7";
-  alphaHex = "B3";
+  rgb = "40, 41, 54";
 
   # Hyprland
   resolution = "1920x1080@60";
@@ -21,4 +21,5 @@
   gitUser = "Permafrozen";
   gitMail = "m8tt8o@gmail.com";
   defaultBranch = "main";
+
 }
