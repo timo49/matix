@@ -16,7 +16,7 @@ in {
       ];
 
       wallpaper = [
-        "e-DP1,${vars.wallpaperPath}"
+        "eDP-1,${vars.wallpaperPath}"
       ];
     };
   };
