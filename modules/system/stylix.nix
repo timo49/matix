@@ -7,7 +7,8 @@ in
   stylix = {
     enable = true;
     autoEnable = false;
-
+    
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/${vars.colorScheme}";
     image = /home/${vars.username}/${vars.wallpaperPath};
   };
 }

@@ -20,7 +20,7 @@ in {
       $menu = wofi --show drun
 
       # Autostart
-      # exec-once = waybar & hyprpaper
+      exec-once = waybar & hyprpaper
 
       # Enviroment Variables
       env = XCURSOR_SIZE,24
