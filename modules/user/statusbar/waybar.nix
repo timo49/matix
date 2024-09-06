@@ -1,9 +1,6 @@
 { config, lib, pkgs, ...}:
 
 {
-  imports = [
-    ../../common/theme.nix
-  ];
 
   programs.waybar = {
     enable = true;

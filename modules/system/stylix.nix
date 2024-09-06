@@ -8,7 +8,7 @@ in
     enable = true;
     autoEnable = false;
     
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/${vars.colorScheme}";
+    base16Scheme = "$../../themes/${vars.colorScheme}.yaml";
     image = /home/${vars.username}/${vars.wallpaperPath};
   };
 }

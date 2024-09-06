@@ -38,7 +38,5 @@
     libnotify
     vesktop
 
-    # schemes (in /share/themes/${name})
-    base16-schemes
   ];
 }
