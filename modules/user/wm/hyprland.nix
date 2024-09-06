@@ -20,7 +20,7 @@ in {
       $menu = wofi --show drun
 
       # Autostart
-      exec-once = waybar & hyprpaper
+      # exec-once = waybar & hyprpaper
 
       # Enviroment Variables
       env = XCURSOR_SIZE,24
@@ -34,8 +34,8 @@ in {
           border_size = 2
 
 
-          col.active_border = 0xff#${config.stylix.base16Scheme.base02}
-          col.inactive_border = 0xff#${config.stylix.base16Scheme.base01}
+          col.active_border = 0xff${config.stylix.base16Scheme.base04}
+          col.inactive_border = 0xff${config.stylix.base16Scheme.base03}
 
 
           resize_on_border = false 

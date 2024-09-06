@@ -6,6 +6,8 @@ in
 {
   stylix = {
     enable = true;
+    autoEnable = false;
+
     image = /home/${vars.username}/${vars.wallpaperPath};
   };
 }

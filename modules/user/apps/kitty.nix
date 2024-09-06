@@ -1,9 +1,6 @@
 { config, pkgs, ...}:
 
 {
-  imports = [
-    ../../common/theme.nix
-  ];
 
   programs.kitty = 
 
@@ -13,8 +10,8 @@
     enable = true;
 
     settings = {
-      foreground = "#${config.colorScheme.palette.base05}";
-      background = "#${config.colorScheme.palette.base00}";
+      foreground = "#${config.stylix.base16Scheme.base05}";
+      background = "#${config.stylix.base16Scheme.base00}";
     };
 
     extraConfig = ''
