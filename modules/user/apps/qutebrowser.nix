@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
-
-{
+let
+  vars = import ../../common/variables.nix;
+in {
 
   programs.qutebrowser = {
     enable = true;
@@ -11,22 +12,24 @@
       c.fonts.default_family = "Hack Nerd Font"
       c.colors.webpage.preferred_color_scheme = "dark"
 
-      base00 = "#${config.lib.stylix.colors.base00}"
-      base01 = "#${config.lib.stylix.colors.base01}"
-      base02 = "#${config.lib.stylix.colors.base02}"
-      base03 = "#${config.lib.stylix.colors.base03}"
-      base04 = "#${config.lib.stylix.colors.base04}"
-      base05 = "#${config.lib.stylix.colors.base05}"
-      base06 = "#${config.lib.stylix.colors.base06}"
-      base07 = "#${config.lib.stylix.colors.base07}"
-      base08 = "#${config.lib.stylix.colors.base08}"
-      base09 = "#${config.lib.stylix.colors.base09}"
-      base0A = "#${config.lib.stylix.colors.base0A}"
-      base0B = "#${config.lib.stylix.colors.base0B}"
-      base0C = "#${config.lib.stylix.colors.base0C}"
-      base0D = "#${config.lib.stylix.colors.base0D}"
-      base0E = "#${config.lib.stylix.colors.base0E}"
-      base0F = "#${config.lib.stylix.colors.base0F}"
+      c.window.transparent = True
+
+      base00 = "rgba(${config.lib.stylix.colors.base00-rgb-r}, ${config.lib.stylix.colors.base00-rgb-g}, ${config.lib.stylix.colors.base00-rgb-b}, ${vars.opacity})"
+      base01 = "rgba(${config.lib.stylix.colors.base01-rgb-r}, ${config.lib.stylix.colors.base01-rgb-g}, ${config.lib.stylix.colors.base01-rgb-b}, ${vars.opacity})"
+      base02 = "rgba(${config.lib.stylix.colors.base02-rgb-r}, ${config.lib.stylix.colors.base02-rgb-g}, ${config.lib.stylix.colors.base02-rgb-b}, ${vars.opacity})"
+      base03 = "rgba(${config.lib.stylix.colors.base03-rgb-r}, ${config.lib.stylix.colors.base03-rgb-g}, ${config.lib.stylix.colors.base03-rgb-b}, ${vars.opacity})"
+      base04 = "rgba(${config.lib.stylix.colors.base04-rgb-r}, ${config.lib.stylix.colors.base04-rgb-g}, ${config.lib.stylix.colors.base04-rgb-b}, ${vars.opacity})"
+      base05 = "rgba(${config.lib.stylix.colors.base05-rgb-r}, ${config.lib.stylix.colors.base05-rgb-g}, ${config.lib.stylix.colors.base05-rgb-b}, ${vars.opacity})"
+      base06 = "rgba(${config.lib.stylix.colors.base06-rgb-r}, ${config.lib.stylix.colors.base06-rgb-g}, ${config.lib.stylix.colors.base06-rgb-b}, ${vars.opacity})"
+      base07 = "rgba(${config.lib.stylix.colors.base07-rgb-r}, ${config.lib.stylix.colors.base07-rgb-g}, ${config.lib.stylix.colors.base07-rgb-b}, ${vars.opacity})"
+      base08 = "rgba(${config.lib.stylix.colors.base08-rgb-r}, ${config.lib.stylix.colors.base08-rgb-g}, ${config.lib.stylix.colors.base08-rgb-b}, ${vars.opacity})"
+      base09 = "rgba(${config.lib.stylix.colors.base09-rgb-r}, ${config.lib.stylix.colors.base09-rgb-g}, ${config.lib.stylix.colors.base09-rgb-b}, ${vars.opacity})"
+      base0A = "rgba(${config.lib.stylix.colors.base0A-rgb-r}, ${config.lib.stylix.colors.base0A-rgb-g}, ${config.lib.stylix.colors.base0A-rgb-b}, ${vars.opacity})"
+      base0B = "rgba(${config.lib.stylix.colors.base0B-rgb-r}, ${config.lib.stylix.colors.base0B-rgb-g}, ${config.lib.stylix.colors.base0B-rgb-b}, ${vars.opacity})"
+      base0C = "rgba(${config.lib.stylix.colors.base0C-rgb-r}, ${config.lib.stylix.colors.base0C-rgb-g}, ${config.lib.stylix.colors.base0C-rgb-b}, ${vars.opacity})"
+      base0D = "rgba(${config.lib.stylix.colors.base0D-rgb-r}, ${config.lib.stylix.colors.base0D-rgb-g}, ${config.lib.stylix.colors.base0D-rgb-b}, ${vars.opacity})"
+      base0E = "rgba(${config.lib.stylix.colors.base0E-rgb-r}, ${config.lib.stylix.colors.base0E-rgb-g}, ${config.lib.stylix.colors.base0E-rgb-b}, ${vars.opacity})"
+      base0F = "rgba(${config.lib.stylix.colors.base0F-rgb-r}, ${config.lib.stylix.colors.base0F-rgb-g}, ${config.lib.stylix.colors.base0F-rgb-b}, ${vars.opacity})"
 
       # Text color of the completion widget. May be a single color to use for
       # all columns or a list of three colors, one for each column.
