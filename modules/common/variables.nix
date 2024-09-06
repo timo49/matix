@@ -6,7 +6,6 @@
   # Theme
   colorScheme = "dracula";
   opacity = "0.7";
-  rgb = "40, 41, 54";
 
   # Hyprland
   resolution = "1920x1080@60";
@@ -15,7 +14,7 @@
   fileManager = "dolphin";
 
   # Hyprpaper (Wallpaper)
-  wallpaperPath = ".wallpapers/rocky-sea.png"; # From ~/
+  wallpaperPath = ".wallpapers/house-painting.png"; # From ~/
 
   # Git Configuration
   gitUser = "Permafrozen";
