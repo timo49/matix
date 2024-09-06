@@ -3,6 +3,6 @@
 {
   stylix = {
     enable = true;
-    image = ~/.wallpapers/rocky-sea.png;
+    image = /home/matteo/.wallpapers/rocky-sea.png;
   };
 }

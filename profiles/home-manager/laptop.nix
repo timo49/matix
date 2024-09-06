@@ -4,7 +4,6 @@
   imports = [
     # minimum
     ../../modules/common/home-manager.nix
-    ../../modules/common/stylix.nix
 
     # extra
     #../../modules/user/utilities/git.nix
