@@ -7,6 +7,7 @@
     ../../modules/system/packages.nix
     ../../modules/system/services.nix
     ../../modules/system/hardware-configuration.nix
+    ../../modules/stylix.nix
 
     # desktop enviroment
     ../../modules/system/wm/hyprland.nix
