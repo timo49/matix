@@ -8,7 +8,7 @@ in
     enable = true;
     autoEnable = false;
     
-    base16Scheme = "$../../themes/${vars.colorScheme}.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
     image = /home/${vars.username}/${vars.wallpaperPath};
   };
 }
