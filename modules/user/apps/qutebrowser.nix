@@ -1,9 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ../../common/theme.nix
-  ];
 
   programs.qutebrowser = {
     enable = true;
@@ -12,7 +9,7 @@
       c.url.default_page = "about:blank"
 
       c.fonts.default_family = "Hack Nerd Font"
-      c.colors.webpage.preferred_color_scheme = "${config.colorScheme.variant}"
+      c.colors.webpage.preferred_color_scheme = "dark"
 
       base00 = "#${config.stylix.base16Scheme.base00}"
       base01 = "#${config.stylix.base16Scheme.base01}"
