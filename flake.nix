@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-24.05";
-    # stylix.url = "github:danth/stylix";
+    stylix.url = "github:danth/stylix";
 
     home-manager = { 
       url = "github:nix-community/home-manager/release-24.05";
@@ -11,7 +11,7 @@
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ...}: # add stylix matteo!!!
+  outputs = inputs@{ nixpkgs, home-manager, stylix, ...}:
     let
       vars = import ./modules/common/variables.nix;
       lib = nixpkgs.lib;
@@ -23,6 +23,8 @@
         inherit system;
         modules = [
           ./configuration.nix
+
+          stylix.nixosModules.stylix
           
            home-manager.nixosModules.home-manager
            {
