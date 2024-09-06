@@ -6,7 +6,7 @@ in
 {
   stylix = {
     enable = true;
-    autoEnable = true;
+    autoEnable = false;
     
     base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
     image = /home/${vars.username}/${vars.wallpaperPath};

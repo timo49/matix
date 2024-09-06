@@ -1,16 +1,15 @@
 { config, lib, pkgs, ...}:
 
-{
+let
+  vars = import ../../common/variables.nix;
+in {
 
   programs.waybar = {
     enable = true;
   };
   
   # Cascading Style Sheet
-  home.file.".config/waybar/style.css".text = 
-  let
-    vars = import ../../common/variables.nix;
-  in ''
+  home.file.".config/waybar/style.css".text = ''
   * {
     border: none;
     border-radius: 0;
@@ -25,23 +24,23 @@
   }
 
   window#waybar {
-    background: rgba(${vars.rgb}, ${vars.opacity});
-    color: #${config.colorScheme.palette.base05};
-    border-bottom: 2px solid #${config.colorScheme.palette.base03};
+    background: rgba(${config.lib.stylix.colors.base00-rgb-r}, ${config.lib.stylix.colors.base00-rgb-g}, ${config.lib.stylix.colors.base00-rgb-b}, ${vars.opacity});
+    color: #${config.lib.stylix.colors.base05};
+    border-bottom: 2px solid #${config.lib.stylix.colors.base03};
   }
 
   tooltip {
-    background: #${config.colorScheme.palette.base00};
-    border: 2px solid #${config.colorScheme.palette.base03};
+    background: #${config.lib.stylix.colors.base00};
+    border: 2px solid #${config.lib.stylix.colors.base03};
   }
 
   #workspaces button {
-    color: #${config.colorScheme.palette.base05};
+    color: #${config.lib.stylix.colors.base05};
   }
 
   #workspaces button.active {
-    color: #${config.colorScheme.palette.base04};
-    border-bottom: 2px solid #${config.colorScheme.palette.base04};
+    color: #${config.lib.stylix.colors.base04};
+    border-bottom: 2px solid #${config.lib.stylix.colors.base04};
   }
   '';
 

@@ -10,7 +10,7 @@
 
     # hyprland  enviroment
     ../../modules/user/wm/hyprland.nix
-    #../../modules/user/statusbar/waybar.nix
+    ../../modules/user/statusbar/waybar.nix
     ../../modules/user/utilities/hyprpaper.nix
     ../../modules/user/apps/kitty.nix
     ../../modules/user/shells/fish.nix
