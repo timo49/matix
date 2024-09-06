@@ -1,6 +1,8 @@
-{ config, pkgs, ...}:
+{ config, pkgs, lib, ...}:
 
-{
+let
+  vars = import ../../common/variables.nix;
+in {
 
     services.dunst = {
     enable = true;
@@ -10,14 +12,14 @@
         height = 300;
         offset = "20x20";
         origin = "top-right";
-        transparency = 0;
-        frame_color = "#${config.lib.stylix.colors.base03}";
-        font = "Hack Nerd Font 9";
+        transparency = "${vars.opacity}";
+        frame_color = lib.mkDefault "#${config.lib.stylix.colors.base03}";
+        font = lib.mkDefault "Hack Nerd Font 9";
       };
 
       urgency_normal = {
-        background = "#${config.lib.stylix.colors.base00}";
-        foreground = "#${config.lib.stylix.colors.base05}";
+        background = lib.mkDefault "#${config.lib.stylix.colors.base00}";
+        foreground = lib.mkDefault "#${config.lib.stylix.colors.base05}";
         timeout = 10;
       };
     };
