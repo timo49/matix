@@ -1,9 +1,8 @@
 { config, pkgs, ... }:
 
-{
-  imports = [
-    ../../common/theme.nix
-  ];
+let
+  vars = import ../../common/variables.nix;
+in {
 
   programs.wofi = {
     enable = true;
@@ -13,33 +12,30 @@
       allow_markup = true;
     };
 
-    style  = 
-    let
-      vars = import ../../common/variables.nix;
-    in ''
+    style  = ''
       * {
         font-family: Hack Nerd Font;
-	      color: #${config.colorScheme.palette.base05};
+	      color: #${config.lib.stylix.colors.base05};
 	      border: none;
       }
 
       #window {
-        background: rgba(${vars.rgb}, ${vars.opacity});
-	      border: 2px solid #${config.colorScheme.palette.base03};
+        background: rgba(${config.lib.stylix.colors.base00-rgb-r}, ${config.lib.stylix.colors.base00-rgb-g}, ${config.lib.stylix.colors.base00-rgb-b}, ${vars.opacity});
+	      border: 2px solid #${config.lib.stylix.colors.base03};
       }
 
       #outer-box {
-	      border: 2px solid #${config.colorScheme.palette.base03};
+	      border: 2px solid #${config.lib.stylix.colors.base03};
       }
 
       #input {
-        background: #${config.colorScheme.palette.base00};
+        background: #${config.lib.stylix.colors.base00};
 	      border: none;
       }
 
       #entry:selected {
-        background: #${config.colorScheme.palette.base03};
-	      color: #${config.colorScheme.palette.base04}:
+        background: #${config.lib.stylix.colors.base03};
+	      color: #${config.lib.stylix.colors.base04}:
 	      border: none;
       }
     '';
