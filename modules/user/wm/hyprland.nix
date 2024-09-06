@@ -34,8 +34,8 @@ in {
           border_size = 2
 
 
-          col.active_border = 0xff#FFFFFF
-          col.inactive_border = 0xff#FFFFFF
+          col.active_border = 0xff#${config.stylix.base16Scheme.base02}
+          col.inactive_border = 0xff#${config.stylix.base16Scheme.base01}
 
 
           resize_on_border = false 

@@ -1,8 +1,11 @@
 { pkgs, ...}:
 
+let
+  vars = import ../common/variables.nix;
+in
 {
   stylix = {
     enable = true;
-    image = /home/matteo/.wallpapers/rocky-sea.png;
+    image = /home/${vars.username}/${vars.wallpaperPath};
   };
 }
