@@ -4,9 +4,6 @@ let
   vars = import ./variables.nix;
 in
 {
-  imports = [
-    <home-manager/nixos>
-  ];
 
   # Bootloader.
   boot.loader = {
@@ -62,9 +59,6 @@ in
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
 
-    home-manager.users.${vars.username} = {
-      import = ../../profiles/home-profile/laptop.nix;
-    };
   };
 
   # Allow unfree packages

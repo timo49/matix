@@ -11,7 +11,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ...}: # add stylix matteo!!!
+  outputs = inputs@{ nixpkgs, home-manager, ...}: # add stylix matteo!!!
     let
       vars = import ./modules/common/variables.nix;
       lib = nixpkgs.lib;
@@ -23,7 +23,17 @@
     nixosConfigurations = {
       nixos = lib.nixosSystem {
         inherit specialArgs;
-        modules = [ ./configuration.nix ];
+        modules = [
+          ./configuration.nix
+          
+           home-manager.nixosModules.home-manager
+           {
+             home-manager.useGlobalPkgs = true;
+             home-manager.useUserPackages = true;
+             home-manager.users.${vars.username} = import ./home.nix;
+            
+           }
+        ];
       };
     }; 
   };
