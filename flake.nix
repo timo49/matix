@@ -17,12 +17,10 @@
       lib = nixpkgs.lib;
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system}; #package architecture for homemanager
-
-      specialArgs = { inherit system; }; # <- same but for Nixos
     in {
     nixosConfigurations = {
       nixos = lib.nixosSystem {
-        inherit specialArgs;
+        inherit system;
         modules = [
           ./configuration.nix
           

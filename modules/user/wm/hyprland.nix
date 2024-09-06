@@ -3,9 +3,6 @@
 let
   vars = import ../../common/variables.nix;
 in {
-  imports = [
-    ../../common/theme.nix
-  ];
   
   wayland.windowManager.hyprland = {
     enable = true;
@@ -37,8 +34,8 @@ in {
           border_size = 2
 
 
-          col.active_border = 0xff${config.colorScheme.palette.base04}
-          col.inactive_border = 0xff${config.colorScheme.palette.base03}
+          col.active_border = 0xff#FFFFFF
+          col.inactive_border = 0xff#FFFFFF
 
 
           resize_on_border = false 
