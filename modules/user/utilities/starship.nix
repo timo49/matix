@@ -1,14 +1,14 @@
 { config, pkgs, ... }:
 
 let
-  base00 = config.stylix.base16Scheme.base00;
-  base01 = config.stylix.base16Scheme.base01;
-  base02 = config.stylix.base16Scheme.base02;
-  base03 = config.stylix.base16Scheme.base03;
-  base04 = config.stylix.base16Scheme.base04;
-  base05 = config.stylix.base16Scheme.base05;
-  base08 = config.stylix.base16Scheme.base08;
-  base0B = config.stylix.base16Scheme.base0B;
+  base00 = config.lib.stylix.colors.base00;
+  base01 = config.lib.stylix.colors.base01;
+  base02 = config.lib.stylix.colors.base02;
+  base03 = config.lib.stylix.colors.base03;
+  base04 = config.lib.stylix.colors.base04;
+  base05 = config.lib.stylix.colors.base05;
+  base08 = config.lib.stylix.colors.base08;
+  base0B = config.lib.stylix.colors.base0B;
 in
 {
 

@@ -37,6 +37,8 @@
     acpi
     libnotify
     vesktop
-
+    
+    # base16
+    base16-schemes
   ];
 }

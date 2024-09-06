@@ -11,13 +11,13 @@
         offset = "20x20";
         origin = "top-right";
         transparency = 0;
-        frame_color = "#${config.stylix.base16Scheme.base03}";
+        frame_color = "#${config.lib.stylix.colors.base03}";
         font = "Hack Nerd Font 9";
       };
 
       urgency_normal = {
-        background = "#${config.stylix.base16Scheme.base00}";
-        foreground = "#${config.stylix.base16Scheme.base05}";
+        background = "#${config.lib.stylix.colors.base00}";
+        foreground = "#${config.lib.stylix.colors.base05}";
         timeout = 10;
       };
     };

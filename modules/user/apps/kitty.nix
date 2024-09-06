@@ -10,8 +10,8 @@
     enable = true;
 
     settings = {
-      foreground = "#${config.stylix.base16Scheme.base05}";
-      background = "#${config.stylix.base16Scheme.base00}";
+      foreground = "#${config.lib.stylix.colors.base05}";
+      background = "#${config.lib.stylix.colors.base00}";
     };
 
     extraConfig = ''
