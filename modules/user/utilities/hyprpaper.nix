@@ -12,11 +12,11 @@ in {
       splash_offset = 2.0;
 
       preload = [
-        "${vars.wallpaperPath}"
+        "~/${vars.wallpaperPath}"
       ];
 
       wallpaper = [
-        "eDP-1,${vars.wallpaperPath}"
+        "eDP-1,~/${vars.wallpaperPath}"
       ];
     };
   };
