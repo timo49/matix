@@ -5,6 +5,7 @@
 
   # Theme
   colorScheme = "gruvbox-dark-soft";
+  polarity = "dark";
   opacity = "0.7";
 
   # Hyprland

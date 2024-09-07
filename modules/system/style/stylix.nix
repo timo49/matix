@@ -8,6 +8,7 @@ in
     enable = true;
     autoEnable = false;
     image = /home/${vars.username}/${vars.wallpaperPath};
+    polarity = "${vars.polarity}";
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/${vars.colorScheme}.yaml";
 
@@ -18,6 +19,7 @@ in
       enable = true;
       autoEnable = false;
       image = /home/${vars.username}/${vars.wallpaperPath};
+      polarity = "${vars.polarity}";
 
       base16Scheme = "${pkgs.base16-schemes}/share/themes/${vars.colorScheme}.yaml";
 
