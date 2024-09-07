@@ -28,6 +28,9 @@
     waybar
     hyprpaper
 
+    # screenshots
+    hyprshot
+
     # core apps
     kitty
     fish

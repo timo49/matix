@@ -144,8 +144,11 @@ in {
 
       # See https://wiki.hyprland.org/Configuring/Keywords/
       $mainMod = SUPER # Sets "Windows" key as main modifier
+      
+      # Screenshots
+      bind = $mainMod, PRINT, exec, hyprshot -m region
 
-      # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
+      # Apps
       bind = $mainMod, T, exec, $terminal
       bind = $mainMod, Q, killactive,
       bind = $mainMod, M, exit,
