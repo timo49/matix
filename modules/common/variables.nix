@@ -4,7 +4,7 @@
   keyMap = "at";
 
   # Theme
-  colorScheme = "dracula";
+  colorScheme = "gruvbox-dark-soft";
   opacity = "0.7";
 
   # Hyprland
