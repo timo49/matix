@@ -38,13 +38,9 @@ in
       targets = {
         gtk.enable = true;
 
-        qutebrowser.enable = true;
         vesktop.enable = true;
         fish.enable = true;
-        neovim = {
-          enable = true;
-          transparentBackground.signColumn = true;
-        };
+        neovim.enable = true;
 
       };
 
