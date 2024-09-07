@@ -34,6 +34,11 @@ in
         popups = "${vars.opacity}";
         terminal = "${vars.opacity}";
       };
+      
+      targets = {
+        qutebrowser.enable = true;
+        vesktop.enable = true;
+      };
 
       base16Scheme = "${pkgs.base16-schemes}/share/themes/${vars.colorScheme}.yaml";
 
