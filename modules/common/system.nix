@@ -61,6 +61,50 @@ in
 
   };
 
+  # Core Packages
+  environment.systemPackages = with pkgs; [
+    git
+    wget
+    nurl
+    vim
+  ];
+
+  # Font Packages
+  fonts.packages = with pkgs; [
+    nerdfonts
+    noto-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji
+    liberation_ttf
+    fira-code
+    fira-code-symbols
+    mplus-outline-fonts.githubRelease
+    dina-font
+    proggyfonts
+  ];
+
+  # Enable the OpenSSH daemon.
+  services.openssh.enable = true;
+
+  # Pipewire
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    wireplumber = {
+      enable = true;
+      extraConfig = {
+        "10-disable-camera" = {
+          "wireplumber.profiles" = {
+            main."monitor.libcamera" = "disabled";
+	        };
+	      };
+      };
+    };
+  };
+
+
+
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 

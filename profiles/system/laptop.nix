@@ -4,12 +4,10 @@
   imports = [
     # core
     ../../modules/common/system.nix
-    ../../modules/system/packages.nix
-    ../../modules/system/services.nix
     ../../modules/system/hardware-configuration.nix
     ../../modules/system/stylix.nix
 
-    # desktop enviroment
+    # hyprland
     ../../modules/system/wm/hyprland.nix
   ];
 }
