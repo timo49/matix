@@ -5,7 +5,7 @@
     # minimum
     ../../modules/common/home-manager.nix
 
-    # extra
+    # git
     ../../modules/user/utilities/git.nix
 
     # hyprland  enviroment
