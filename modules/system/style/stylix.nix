@@ -38,6 +38,7 @@ in
       targets = {
         qutebrowser.enable = true;
         vesktop.enable = true;
+        neovim.enable = true;
       };
 
       base16Scheme = "${pkgs.base16-schemes}/share/themes/${vars.colorScheme}.yaml";
