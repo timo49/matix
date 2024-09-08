@@ -3,6 +3,9 @@
 let
   vars = import ../../../../core/system/variables.nix;
 in {
+  environment.systemPackages = with pkgs; [
+    kitty
+  ];
 
   home-manager.sharedModules = [{
     programs.kitty = {
