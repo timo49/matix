@@ -1,23 +1,29 @@
 { config, pkgs, ...}:
 
 let
-  vars = import ../../common/variables.nix;
+  vars = import ../../../../core/system/variables.nix;
 in {
-  services.hyprpaper = {
-    enable = true;
+  environment.systemPackages = with pkgs; [
+    hyprpaper
+  ];
 
-    settings = {
-      ipc = "on";
-      splash = false;
-      splash_offset = 2.0;
+  home-manager.sharedModules = [{
+    services.hyprpaper = {
+      enable = true;
 
-      preload = [
-        "~/${vars.wallpaperPath}"
-      ];
+      settings = {
+        ipc = "on";
+        splash = false;
+        splash_offset = 2.0;
 
-      wallpaper = [
-        "eDP-1,~/${vars.wallpaperPath}"
-      ];
+        preload = [
+          "~/${vars.wallpaperPath}"
+        ];
+
+        wallpaper = [
+          "eDP-1,~/${vars.wallpaperPath}"
+        ];
+      };
     };
-  };
+  }];
 }
