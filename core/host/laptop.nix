@@ -10,6 +10,7 @@
     ../../external/config/desktop-environment/status-bar/waybar.nix
     ../../external/config/desktop-environment/wallpaper-setter/hyprpaper.nix
     ../../external/config/desktop-environment/notification-daemon/dunst.nix
+    ../../external/config/desktop-environment/app-launcher/wofi.nix
 
   ];
 }
