@@ -1,7 +1,7 @@
 { config, lib, pkgs, ...}:
 
 let
-  vars = import ../../../../core/system/variables.nix;;
+  vars = import ../../../../core/system/variables.nix;
 in {
 
   programs.waybar = {
