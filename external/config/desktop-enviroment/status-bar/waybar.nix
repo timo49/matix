@@ -8,6 +8,10 @@ in {
     enable = true;
   };
 
+  environment.systemPackages = with pkgs; [
+    waybar
+  ];
+
   home-manager.sharedModules = [{
   
   # Cascading Style Sheet
