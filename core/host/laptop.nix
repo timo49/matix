@@ -16,6 +16,7 @@
     ../../external/config/terminal/emulator/kitty.nix
     ../../external/config/terminal/shell/fish.nix
     ../../external/config/terminal/prompt/starship.nix
+    ../../external/config/terminal/editor/neovim.nix
 
     # Utility
     ../../external/config/utility/git.nix
