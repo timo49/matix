@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+    fish
+  ];
+
   home-manager.sharedModules = [{
      programs.fish = {
       enable = true;
