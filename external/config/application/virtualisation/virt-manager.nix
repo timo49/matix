@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 let
-  vars = import ../../common/variables.nix;
+  vars = import ../../../../core/system/variables.nix;
 in {
   # Enable virt-manager and dconf
   programs.virt-manager.enable = true;

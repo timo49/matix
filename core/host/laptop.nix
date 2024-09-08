@@ -14,6 +14,7 @@
 
     # Apps
     ../../external/config/application/browser/qutebrowser.nix
+    ../../external/config/application/virtualisation/virt-manager.nix
 
   ];
 }
