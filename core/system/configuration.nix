@@ -4,7 +4,11 @@ let
   vars = import ./variables.nix;
 in
 {
-  imports = [ ../hardware/hardware-configuration.nix ]
+  imports = [
+    ../hardware/hardware-configuration.nix
+    ../host/laptop.nix
+  ];
+
   # Bootloader.
   boot.loader = {
     systemd-boot.enable = false;
