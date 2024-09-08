@@ -227,6 +227,6 @@ in {
 
       windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
     '';
-    }];
-  };
+    };
+  }];
 }
