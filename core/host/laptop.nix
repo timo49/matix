@@ -5,12 +5,15 @@
     # Color Manager
     ../../external/config/color-manager/stylix.nix
 
-    # Desktop Enviroment
+    # Desktop Environment
     ../../external/config/desktop-environment/window-manager/hyprland.nix
     ../../external/config/desktop-environment/status-bar/waybar.nix
     ../../external/config/desktop-environment/wallpaper-setter/hyprpaper.nix
     ../../external/config/desktop-environment/notification-daemon/dunst.nix
     ../../external/config/desktop-environment/app-launcher/wofi.nix
+
+    # Terminal Environment
+    ../../external/config/terminal/emulator/kitty.nix
 
     # Utility
     ../../external/config/utility/git.nix
