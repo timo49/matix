@@ -3,7 +3,14 @@
 let
   vars = import ../../common/variables.nix;
 in {
-  
+
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
+  home-manager.sharedModules = [{
+
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {};
@@ -220,5 +227,6 @@ in {
 
       windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
     '';
+    }];
   };
 }
