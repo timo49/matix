@@ -2,7 +2,7 @@
 let
   vars = import ../../../../core/system/variables.nix;
 in {
-  environment.systemPackages = [
+  environment.systemPackages = with pkgs; [
     qutebrowser
   ];
 
