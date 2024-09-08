@@ -13,7 +13,7 @@
 
   outputs = inputs@{ nixpkgs, home-manager, stylix, ...}:
     let
-      vars = import ./modules/common/variables.nix;
+      vars = import ./core/system/variables.nix;
       lib = nixpkgs.lib;
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system}; #package architecture for homemanager
@@ -22,7 +22,7 @@
       nixos = lib.nixosSystem {
         inherit system;
         modules = [
-          ./configuration.nix
+          ./core/system/configuration.nix
 
           stylix.nixosModules.stylix
           
@@ -30,7 +30,7 @@
            {
              home-manager.useGlobalPkgs = true;
              home-manager.useUserPackages = true;
-             home-manager.users.${vars.username} = import ./home.nix;
+             home-manager.users.${vars.username} = import ./core/system/home.nix;
             
            }
         ];

@@ -4,7 +4,7 @@ let
   vars = import ./variables.nix;
 in
 {
-
+  imports = [ ../hardware/hardware-configuration.nix ]
   # Bootloader.
   boot.loader = {
     systemd-boot.enable = false;
