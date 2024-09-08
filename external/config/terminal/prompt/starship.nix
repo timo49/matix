@@ -12,16 +12,15 @@ let
 in
 {
 
-  programs.starship = {
-    enable = true;
-  };
-
   environment.systemPackages = with pkgs; [
     starship
   ];
 
   home-manager.sharedModules = [{
-  
+    programs.starship = {
+      enable = true;
+    };
+
     home.file.".config/starship.toml".text = ''
       format = """\
       [](bg:#${base00} fg:#${base01})\
