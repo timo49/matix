@@ -9,6 +9,10 @@ in {
     xwayland.enable = true;
   };
 
+  environment.systemPackages = with pkgs; [
+    hyprshot
+  ];
+
   home-manager.sharedModules = [{
 
   wayland.windowManager.hyprland = {

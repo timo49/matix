@@ -4,6 +4,10 @@ let
   vars = import ../../../core/system/variables.nix;
 in
 {
+  environment.systemPackages = with pkgs; [
+    base16-schemes
+  ];
+
   stylix = {
     enable = true;
     autoEnable = false;
