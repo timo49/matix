@@ -1,7 +1,7 @@
 { pkgs, ...}:
 
 let
-  vars = import ../../common/variables.nix;
+  vars = import ../../../core/system/variables.nix;
 in
 {
   stylix = {
