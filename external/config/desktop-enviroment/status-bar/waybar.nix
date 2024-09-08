@@ -1,12 +1,14 @@
 { config, lib, pkgs, ...}:
 
 let
-  vars = import ../../common/variables.nix;
+  vars = import ../../../../core/system/variables.nix;;
 in {
 
   programs.waybar = {
     enable = true;
   };
+
+  home-manager.sharedModules = [{
   
   # Cascading Style Sheet
   home.file.".config/waybar/style.css".text = ''
@@ -88,4 +90,6 @@ in {
       }
     }
   '';
+
+  }];
 }
