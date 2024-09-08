@@ -12,6 +12,9 @@
     ../../external/config/desktop-environment/notification-daemon/dunst.nix
     ../../external/config/desktop-environment/app-launcher/wofi.nix
 
+    # Utility
+    ../../external/config/utility/git.nix
+
     # Apps
     ../../external/config/application/browser/qutebrowser.nix
     ../../external/config/application/virtualisation/virt-manager.nix
