@@ -14,6 +14,7 @@
 
     # Terminal Environment
     ../../external/config/terminal/emulator/kitty.nix
+    ../../external/config/terminal/shell/fish.nix
 
     # Utility
     ../../external/config/utility/git.nix
