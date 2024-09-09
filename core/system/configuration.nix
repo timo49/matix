@@ -71,6 +71,7 @@ in
     wget
     nurl
     vim
+    gnome.nautilus
   ];
 
   # Font Packages
@@ -105,9 +106,6 @@ in
       };
     };
   };
-
-  services.udisks2.enable = true;
-  programs.udiskie.enable = true;
 
 
   # Allow unfree packages
