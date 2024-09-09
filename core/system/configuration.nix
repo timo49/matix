@@ -71,7 +71,6 @@ in
     wget
     nurl
     vim
-    gnome.nautilus
   ];
 
   # Font Packages
