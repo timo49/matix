@@ -106,7 +106,8 @@ in
     };
   };
 
-
+  services.udisks2.enable = true;
+  programs.udiskie.enable = true;
 
 
   # Allow unfree packages
