@@ -25,6 +25,7 @@
     ../../external/config/application/browser/qutebrowser.nix
     ../../external/config/application/virtualisation/virt-manager.nix
     ../../external/config/application/notes/obsidian.nix
+    ../../external/config/application/discord/vesktop.nix
 
   ];
 }
