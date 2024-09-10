@@ -33,7 +33,6 @@ in {
       background: rgba(${config.lib.stylix.colors.base00-rgb-r}, ${config.lib.stylix.colors.base00-rgb-g}, ${config.lib.stylix.colors.base00-rgb-b}, ${vars.opacity});
       color: #${config.lib.stylix.colors.base05};
       border-bottom: 2px solid #${config.lib.stylix.colors.base03};
-      margin: 20px;
     }
 
     tooltip {
