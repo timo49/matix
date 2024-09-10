@@ -57,11 +57,9 @@ in {
           layout = dwindle
       }
 
-      # https://wiki.hyprland.org/Configuring/Variables/#decoration
       decoration {
           rounding = 0
 
-          # Change transparency of focused and unfocused windows
           active_opacity = 1.0
           inactive_opacity = 1.0
 
@@ -70,7 +68,6 @@ in {
           shadow_render_power = 3
           col.shadow = rgba(1a1a1aee)
 
-          # https://wiki.hyprland.org/Configuring/Variables/#blur
           blur {
               enabled = true
               size = 9
@@ -80,7 +77,6 @@ in {
           }
       }
 
-      # https://wiki.hyprland.org/Configuring/Variables/#animations
       animations {
           enabled = true
 
@@ -96,30 +92,22 @@ in {
           animation = workspaces, 1, 6, default
       }
 
-      # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
       dwindle {
           pseudotile = true # Master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
           preserve_split = true # You probably want this
       }
 
-      # See https://wiki.hyprland.org/Configuring/Master-Layout/ for more
       master {
           new_status = master
       }
 
-      # https://wiki.hyprland.org/Configuring/Variables/#misc
       misc { 
           force_default_wallpaper = 0 # Set to 0 or 1 to disable the anime mascot wallpapers
           disable_hyprland_logo = false # If true disables the random hyprland logo / anime girl background. :(
           disable_splash_rendering = true
       }
 
-
-      #############
-      ### INPUT ###
-      #############
-
-      # https://wiki.hyprland.org/Configuring/Variables/#input
+      # Input
       input {
           kb_layout = ${vars.keyMap}
           kb_variant =
@@ -136,24 +124,18 @@ in {
           }
       }
 
-      # https://wiki.hyprland.org/Configuring/Variables/#gestures
       gestures {
           workspace_swipe = false
       }
 
       # Example per-device config
-      # See https://wiki.hyprland.org/Configuring/Keywords/#per-device-input-configs for more
       device {
           name = epic-mouse-v1
           sensitivity = -0.5
       }
 
+      # Keybinds
 
-      ####################
-      ### KEYBINDINGSS ###
-      ####################
-
-      # See https://wiki.hyprland.org/Configuring/Keywords/
       $mainMod = SUPER # Sets "Windows" key as main modifier
       
       # Screenshots
@@ -212,13 +194,7 @@ in {
       bindm = $mainMod, mouse:272, movewindow
       bindm = $mainMod, mouse:273, resizewindow
 
-
-      ##############################
-      ### WINDOWS AND WORKSPACES ###
-      ##############################
-
-      # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
-      # See https://wiki.hyprland.org/Configuring/Workspace-Rules/ for workspace rules
+      # Window & Workspace Rules
 
       # Example windowrule v1
       # windowrule = float, ^(kitty)$
