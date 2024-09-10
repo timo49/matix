@@ -55,7 +55,9 @@ in {
       {
         "layer": "top",
         "position": "top",
-        "margin": "20px",
+        "margin-left": "20px",
+        "margin-right: "20px",
+        "margin-top": "5px",
 
         "modules-left": [
     "hyprland/workspaces",
