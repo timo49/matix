@@ -60,33 +60,33 @@ in {
         "margin-top": "5",
 
         "modules-left": [
-    "hyprland/workspaces",
+          "hyprland/workspaces",
         ],
 
         "modules-center": [
-      "hyprland/window"
+          "hyprland/window"
         ],
 
         "modules-right": [
           "wireplumber",
-    "battery",
+          "battery",
           "clock"
         ],
 
         "hyprland/window": {
-            "format": "{}",
-            "max-length": 50
+          "format": "{}",
+          "max-length": 50
         },
 
         "battery": {
-            "format": "{icon} {capacity}%",
-            "format-icons": ["󰂃", "󰂃", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-            "tooltip-format": "{time}"
+          "format": "{icon} {capacity}%",
+          "format-icons": ["󰂃", "󰂃", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+          "tooltip-format": "{time}"
         },
 
         "clock": {
-            "format": "󱑆 {:%H:%M }",
-            "format-alt": "󱑆 {:%a, %d. %b  %H:%M }",
+          "format": "󱑆 {:%H:%M }",
+          "format-alt": "󱑆 {:%a, %d. %b  %H:%M }",
        },
 
         "wireplumber": {
