@@ -56,7 +56,7 @@ in {
         "layer": "top",
         "position": "top",
         "margin-left": "20px",
-        "margin-right: "20px",
+        "margin-right": "20px",
         "margin-top": "5px",
 
         "modules-left": [
