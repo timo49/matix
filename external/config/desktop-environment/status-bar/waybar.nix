@@ -18,7 +18,7 @@ in {
     home.file.".config/waybar/style.css".text = ''
     * {
       border: none;
-      border-radius: 0;
+      border-radius: ${vars.rounding}px;
       font-family: Hack Nerd Font;
     }
 
