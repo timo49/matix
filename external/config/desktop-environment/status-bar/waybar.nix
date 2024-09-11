@@ -24,7 +24,8 @@ in {
 
     #battery,
     #clock,
-    #wireplumber {
+    #wireplumber,
+    #network {
       padding: 0 10px;
       margin: 0 5px;
     }
@@ -67,6 +68,7 @@ in {
         ],
 
         "modules-right": [
+          "network",
           "wireplumber",
           "battery",
           "clock"
@@ -104,6 +106,19 @@ in {
           "format-muted": "󰟎 ",
           "scroll-step": "1",
           "format-icons": ["󰋋", "󰋋", "󰋋"]
+        },
+
+        "network": {
+          "interface": "wlp4s0",
+          "format": "{ifname}",
+          "format-wifi": "  {signalStrength}%",
+          "format-ethernet": "{ipaddr}/{cidr} 󰊗 ",
+          "format-disconnected": "󰖪 ", //An empty format will hide the module.
+          "tooltip-format": "{ifname} via {gwaddr} 󰊗 ",
+          "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
+          "tooltip-format-ethernet": "{ifname}  ",
+          "tooltip-format-disconnected": "Disconnected",
+          "max-length": 50
         }
       }
     '';
