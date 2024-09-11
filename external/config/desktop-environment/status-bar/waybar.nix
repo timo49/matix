@@ -93,7 +93,7 @@ in {
           "format": "{icon} {volume}% ",
           "format-muted": "󰟎 ",
           "scroll-step": "1",
-          "format-icons": ["󰋋 ", "󰋋 ", "󰋋 "]
+          "format-icons": ["󰋋", "󰋋", "󰋋"]
         }
       }
     '';
