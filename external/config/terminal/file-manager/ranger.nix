@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    ranger;
+    ranger
   ];
 
   home-manager.sharedModules = [{
