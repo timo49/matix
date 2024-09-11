@@ -32,11 +32,11 @@ in {
     window#waybar {
       background: rgba(${config.lib.stylix.colors.base00-rgb-r}, ${config.lib.stylix.colors.base00-rgb-g}, ${config.lib.stylix.colors.base00-rgb-b}, ${vars.opacity});
       color: #${config.lib.stylix.colors.base05};
-      border-bottom: 2px solid #${config.lib.stylix.colors.base03};
+      border: 2px solid #${config.lib.stylix.colors.base03};
     }
 
     tooltip {
-      background: #${config.lib.stylix.colors.base00};
+      background: rgba(${config.lib.stylix.colors.base00-rgb-r}, ${config.lib.stylix.colors.base00-rgb-g}, ${config.lib.stylix.colors.base00-rgb-b}, ${vars.opacity});
       border: 2px solid #${config.lib.stylix.colors.base03};
     }
 
@@ -46,7 +46,6 @@ in {
 
     #workspaces button.active {
       color: #${config.lib.stylix.colors.base04};
-      border-bottom: 2px solid #${config.lib.stylix.colors.base04};
     }
     '';
 
