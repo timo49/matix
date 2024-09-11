@@ -4,11 +4,11 @@ let
 in
 {
 
-  environment.systemPackages = [
+  environment.systemPackages = with pkgs; [
     fastfetch
   ];
 
-  home.sharedModules = [{
+  home-manager.sharedModules = [{
     home.file.".config/fastfetch/config.jsonc".text = ''
 
     '';
