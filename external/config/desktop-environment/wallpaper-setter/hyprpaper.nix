@@ -17,11 +17,11 @@ in {
         splash_offset = 2.0;
 
         preload = [
-          "../../../theme/wallpaper/${vars.wallpaper}"
+          "~/.modular-nixos-configuration/external/theme/wallpaper/${vars.wallpaper}"
         ];
 
         wallpaper = [
-          "eDP-1,../../../theme/wallpaper/${vars.wallpaper}"
+          "eDP-1,~/.modular-nixos-configuration/external/theme/wallpaper/${vars.wallpaper}"
         ];
       };
     };
