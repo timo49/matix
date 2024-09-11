@@ -16,7 +16,7 @@
   fileManager = "dolphin";
 
   # Hyprpaper (Wallpaper)
-  wallpaperPath = ".wallpapers/house-painting.png"; # From ~/
+  wallpaper= "forest-green.png"; # external/theme/wallpaper
 
   # Git Configuration
   gitUser = "Permafrozen";
