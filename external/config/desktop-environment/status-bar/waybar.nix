@@ -91,9 +91,9 @@ in {
 
         "wireplumber": {
           "format": "{icon} {volume}% ",
-          "format-muted": " ",
+          "format-muted": "󰟎 ",
           "scroll-step": "1",
-          "format-icons": ["", " ", " "]
+          "format-icons": ["󰋋 ", "󰋋 ", "󰋋 "]
         }
       }
     '';
