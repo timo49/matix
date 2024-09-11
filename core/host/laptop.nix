@@ -27,6 +27,7 @@
     ../../external/config/application/notes/obsidian.nix
     ../../external/config/application/discord/vesktop.nix
     ../../external/config/application/fastfetch/fastfetch.nix
+    ../../external/config/application/bottom/bottom.nix
 
   ];
 }
