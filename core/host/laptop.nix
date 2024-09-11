@@ -17,6 +17,7 @@
     ../../external/config/terminal/shell/fish.nix
     ../../external/config/terminal/prompt/starship.nix
     ../../external/config/terminal/editor/neovim.nix
+    ../../external/config/terminal/fastfetch/fastfetch.nix
 
     # Utility
     ../../external/config/utility/git.nix
@@ -26,7 +27,6 @@
     ../../external/config/application/virtualisation/virt-manager.nix
     ../../external/config/application/notes/obsidian.nix
     ../../external/config/application/discord/vesktop.nix
-    ../../external/config/application/fastfetch/fastfetch.nix
     ../../external/config/application/bottom/bottom.nix
 
   ];
