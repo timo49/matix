@@ -67,6 +67,7 @@ in
 
   # Core Packages
   environment.systemPackages = with pkgs; [
+    acpi
     git
     wget
     nurl
