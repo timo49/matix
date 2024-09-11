@@ -19,9 +19,11 @@ in
             "right": 6
         }
     },
+
     "display": {
-        "separator": " •  "
+        "separator": " │ "
     },
+
     "modules": [
       "break",
       "break",
@@ -46,7 +48,7 @@ in
             },
             {
                 "type": "packages",
-                "format": "{} (pacman)",
+                "format": "{} (nix)",
                 "key": "packages       ",
                 "keyColor": "33",  
               },
