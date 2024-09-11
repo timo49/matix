@@ -74,7 +74,7 @@ in {
         ],
 
         "hyprland/window": {
-          "format": "{}",
+          "format": "{title}",
           "max-length": 50
         },
 
