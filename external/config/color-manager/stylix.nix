@@ -11,7 +11,7 @@ in
   stylix = {
     enable = true;
     autoEnable = false;
-    image = /home/${vars.username}/.modular-nixos-configuration/external/theme/${vars.wallpaper};
+    image = /home/${vars.username}/.modular-nixos-configuration/external/theme/wallpaper/${vars.wallpaper};
     polarity = "${vars.polarity}";
      
     opacity = {
@@ -29,7 +29,7 @@ in
     stylix = {
       enable = true;
       autoEnable = false;
-      image = /home/${vars.username}/.modular-nixos-configuration/external/theme/${vars.wallpaper};
+      image = /home/${vars.username}/.modular-nixos-configuration/external/theme/wallpaper/${vars.wallpaper};
       polarity = "${vars.polarity}";
       
       opacity = {
