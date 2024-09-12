@@ -10,7 +10,7 @@
     ../../external/config/desktop-environment/status-bar/waybar.nix
     ../../external/config/desktop-environment/wallpaper-setter/hyprpaper.nix
     ../../external/config/desktop-environment/notification-daemon/dunst.nix
-    ../../external/config/desktop-environment/app-launcher/wofi.nix
+    ../../external/config/desktop-environment/app-launcher/rofi-wayland.nix
 
     # Terminal Environment
     ../../external/config/terminal/emulator/kitty.nix

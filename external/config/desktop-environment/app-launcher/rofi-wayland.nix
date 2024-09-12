@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = [
+  environment.systemPackages = with pkgs; [
     rofi-wayland
   ];
 

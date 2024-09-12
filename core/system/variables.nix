@@ -14,6 +14,7 @@
   terminal = "kitty";
   browser = "qutebrowser";
   fileManager = "dolphin";
+  menu = "rofi";
 
   # Hyprpaper (Wallpaper)
   wallpaper= "forest-green.png"; # external/theme/wallpaper
