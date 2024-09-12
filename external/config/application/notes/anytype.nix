@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    notion-app-enhanced
+    anytype
   ];
   
   home-manager.sharedModules = [{
