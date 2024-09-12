@@ -28,7 +28,7 @@ in {
       $terminal = ${vars.terminal}
       $browser = ${vars.browser}
       # $fileManager = ${vars.fileManager}
-      $menu = ${vars.menu} --show drun
+      $menu = ${vars.menu} -show drun
 
       # Autostart
       exec-once = waybar & hyprpaper
