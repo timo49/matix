@@ -1,7 +1,7 @@
 { config, pkgs, ...}:
 
 {
-  enivornment.systemPackages = with pkgs; [
+  enviornment.systemPackages = with pkgs; [
     jetbrains.idea-ultimate
   ];
 }
