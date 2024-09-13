@@ -47,7 +47,10 @@ in {
 
     #workspaces button.active {
       color: #${config.lib.stylix.colors.base04};
-      background: #${config.lib.stylix.colors.base00};
+      border-radius: 30px;
+      background: #${config.lib.stylix.colors.base03};
+      border-top: 2px solid #${config.lib.stylix.colors.base03};
+      border-bottom: 2px solid #${config.lib.stylix.colors.base03};
     }
     '';
 
