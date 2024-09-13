@@ -79,15 +79,6 @@ in {
           "max-length": 50
         },
 
-        "hyprland/workspaces": {
-            "format": "{icon}",
-            "on-click": "activate",
-            "format-icons": {
-              "urgent": "󰗖",
-              "active": "",
-              "default": ""
-            }
-        },
 
         "battery": {
           "format": "{icon} {capacity}%",
