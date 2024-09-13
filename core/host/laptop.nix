@@ -27,7 +27,7 @@
     ../../external/config/application/browser/qutebrowser.nix
     ../../external/config/application/virtualisation/virt-manager.nix
     ../../external/config/application/notes/obsidian.nix
-    ../../external/config/application/notes/anytype.nix
+    ../../external/config/application/notes/logseq.nix
     ../../external/config/application/discord/vesktop.nix
     ../../external/config/application/bottom/bottom.nix
     ../../external/config/application/IDE/idea-ultimate.nix
