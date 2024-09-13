@@ -83,9 +83,9 @@ in {
             "format": "{icon}",
             "on-click": "activate",
             "format-icons": {
-              "urgent": "󰗖 ",
-              "active": " ",
-              "default": " "
+              "urgent": 󰗖",
+              "active": "",
+              "default": ""
             }
         },
 
