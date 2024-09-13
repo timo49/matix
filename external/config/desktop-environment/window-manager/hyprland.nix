@@ -206,6 +206,7 @@ in {
       layerrule = blur,wofi
 
       windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
+      windowrule = opacity ${vars.opacity}, ^(obsidian)$
     '';
     };
   }];
