@@ -18,6 +18,7 @@
         --ribbon-background-collapsed: #${config.lib.stylix.colors.base00};
         --status-bar-background: #${config.lib.stylix.colors.base00};
         --titlebar-background: #${config.lib.stylix.colors.base00};
+        -divider-color: #${config.lib.stylix.colors.base00};
 
       }
     '';
