@@ -30,6 +30,7 @@
     ../../external/config/application/notes/anytype.nix
     ../../external/config/application/discord/vesktop.nix
     ../../external/config/application/bottom/bottom.nix
+    ../../external/config/application/IDE/idea-ultimate.nix
 
   ];
 }
