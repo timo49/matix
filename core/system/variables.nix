@@ -7,7 +7,7 @@
   colorScheme = "gruvbox-dark-soft";
   polarity = "dark";
   opacity = "0.7";
-  rounding = "10";
+  rounding = "30";
 
   # Hyprland
   resolution = "1920x1080@60";
