@@ -42,7 +42,7 @@ in {
           gaps_in = 5
           gaps_out = 20
 
-          border_size = 2
+          border_size = ${vars.borderWidth}
 
 
           col.active_border = 0xff${config.lib.stylix.colors.base04}

@@ -33,12 +33,12 @@ in {
     window#waybar {
       background: rgba(${config.lib.stylix.colors.base00-rgb-r}, ${config.lib.stylix.colors.base00-rgb-g}, ${config.lib.stylix.colors.base00-rgb-b}, ${vars.opacity});
       color: #${config.lib.stylix.colors.base05};
-      border: 2px solid #${config.lib.stylix.colors.base03};
+      border: ${vars.borderWidth}px solid #${config.lib.stylix.colors.base03};
     }
 
     tooltip {
       background: rgba(${config.lib.stylix.colors.base00-rgb-r}, ${config.lib.stylix.colors.base00-rgb-g}, ${config.lib.stylix.colors.base00-rgb-b}, ${vars.opacity});
-      border: 2px solid #${config.lib.stylix.colors.base03};
+      border: ${vars.borderWidth}px solid #${config.lib.stylix.colors.base03};
     }
 
     #workspaces button {
