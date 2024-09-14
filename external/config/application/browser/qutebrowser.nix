@@ -14,14 +14,14 @@ in {
 
         # --- Default Page --- #
 
-        c.url.start_pages = "about:blank"
-        c.url.default_page = "about:blank"
+        c.url.start_pages = "~/.dotfiles/homepage/index.html"
+        c.url.default_page = "~/.dotfiles/homepage/index.html"
 
         # --- UI --- #
 
         c.fonts.default_family = "Hack Nerd Font"
         c.colors.webpage.preferred_color_scheme = "dark"
-        c.window.transparent = True
+        # c.window.transparent = True
         c.scrolling.smooth = True
         c.statusbar.show   = "never"
         c.tabs.show        = "never" 
@@ -330,7 +330,40 @@ in {
       '';
     };
 
+    home.file.".dotfiles/homepage/index.html".text = ''
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>home</title>
+          <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+          <header>
+              <h1>Welcome to the Test Page</h1>
+          </header>
+          <main>
+              <section>
+                  <h2>This is a section</h2>
+                  <p>Here is some sample text for testing styles and layout.</p>
+              </section>
+          </main>
+          <footer>
+              <p>&copy; 2024 Test Page</p>
+          </footer>
+      </body>
+      </html>
+    '';
 
+    home.file.".dotfiles/homepage/style.css".text = ''
+      * {
+          font-family: Hack Nerd Font;
+
+          background-color: ${config.lib.stylix.colors.base00};
+          color: ${config.lib.stylix.colors.base05};
+      }
+    '';
 
   }];
 }
