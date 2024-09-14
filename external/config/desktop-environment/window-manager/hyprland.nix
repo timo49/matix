@@ -49,7 +49,7 @@ in {
           col.inactive_border = 0xff${config.lib.stylix.colors.base03}
 
 
-          resize_on_border = false 
+          resize_on_border = true 
 
 
           allow_tearing = false
@@ -151,7 +151,7 @@ in {
       bind = $mainMod, A, exec, $menu
       bind = $mainMod, P, pseudo, # dwindle
       bind = $mainMod, J, togglesplit, # dwindle
-      bind = $mainMod, G, float
+      bind = $mainMod, G, togglefloating
 
       # Move focus with mainMod + arrow keys
       bind = $mainMod, left, movefocus, l
