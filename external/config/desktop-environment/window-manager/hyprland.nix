@@ -151,6 +151,7 @@ in {
       bind = $mainMod, A, exec, $menu
       bind = $mainMod, P, pseudo, # dwindle
       bind = $mainMod, J, togglesplit, # dwindle
+      bind = $mainMod, G, float
 
       # Move focus with mainMod + arrow keys
       bind = $mainMod, left, movefocus, l
