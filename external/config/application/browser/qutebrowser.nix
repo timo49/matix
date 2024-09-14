@@ -360,8 +360,8 @@ in {
       * {
           font-family: Hack Nerd Font;
 
-          background-color: ${config.lib.stylix.colors.base00};
-          color: ${config.lib.stylix.colors.base05};
+          background-color: #${config.lib.stylix.colors.base00};
+          color: #${config.lib.stylix.colors.base05};
       }
     '';
 
