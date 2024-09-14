@@ -21,7 +21,7 @@ in {
 
         c.fonts.default_family = "Hack Nerd Font"
         c.colors.webpage.preferred_color_scheme = "dark"
-        # c.window.transparent = True
+        c.window.transparent = True
         c.scrolling.smooth = True
         c.statusbar.show   = "never"
         c.tabs.show        = "never" 
@@ -340,28 +340,31 @@ in {
           <link rel="stylesheet" href="style.css">
       </head>
       <body>
-          <header>
-              <h1>Welcome to the Test Page</h1>
-          </header>
           <main>
-              <section>
-                  <h2>This is a section</h2>
-                  <p>Here is some sample text for testing styles and layout.</p>
-              </section>
+              <div class="centered-content">
+                  <h2>Qutebrowser</h2>
+                  <p>press 'o' to open a new Tab</p>
+              </div>
           </main>
-          <footer>
-              <p>&copy; 2024 Test Page</p>
-          </footer>
       </body>
       </html>
     '';
 
     home.file.".dotfiles/homepage/style.css".text = ''
-      * {
+      body {
           font-family: Hack Nerd Font;
 
           background-color: #${config.lib.stylix.colors.base00};
           color: #${config.lib.stylix.colors.base05};
+
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .centered-content {
+        text-align: center;
       }
     '';
 
