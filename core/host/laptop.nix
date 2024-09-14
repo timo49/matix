@@ -21,7 +21,7 @@
 
     # Utility
     ../../external/config/utility/git.nix
-    # ../../external/config/application/virtualisation/quickemu.nix
+    ../../external/config/application/virtualisation/quickemu.nix
 
     # Apps
     ../../external/config/application/browser/qutebrowser.nix
