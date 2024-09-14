@@ -11,14 +11,27 @@ in {
     programs.qutebrowser = {
       enable = true;
       extraConfig = ''
+
+        # --- Default Page --- #
+
         c.url.start_pages = ["about:blank"]
         c.url.default_page = "about:blank"
 
+        # --- UI --- #
+
         c.fonts.default_family = "Hack Nerd Font"
         c.colors.webpage.preferred_color_scheme = "dark"
-
         c.window.transparent = True
+        c.scrolling.smooth = True
+        c.statusbar.show   = "never"
+        c.tabs.show        = "never" 
+        c.scrolling.bar    = "never"
+
+        # --- Utility --- #
+
         c.content.pdfjs = True
+
+        # --- Colors --- #
 
         base00 = "rgba(${config.lib.stylix.colors.base00-rgb-r}, ${config.lib.stylix.colors.base00-rgb-g}, ${config.lib.stylix.colors.base00-rgb-b}, ${vars.opacity})"
         base01 = "rgba(${config.lib.stylix.colors.base01-rgb-r}, ${config.lib.stylix.colors.base01-rgb-g}, ${config.lib.stylix.colors.base01-rgb-b}, ${vars.opacity})"
