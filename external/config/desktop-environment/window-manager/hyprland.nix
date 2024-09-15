@@ -207,6 +207,11 @@ in {
       layerrule = blur,wofi
 
       windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
+
+      # Qutebrowser Transparency
+      windowrulev2 = opacity ${vars.opacity}, org.qutebrowser.qutebrowser:title:^(home - qutebrowser)$
+
+      # Obsidian Transparence
       # windowrule = opacity ${vars.opacity}, ^(obsidian)$
     '';
     };

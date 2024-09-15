@@ -13,7 +13,7 @@ in {
       extraConfig = ''
 
         # --- Default Page --- #
-
+        c.window.title_format = "{title}"
         c.url.start_pages = "~/.dotfiles/homepage/index.html"
         c.url.default_page = "~/.dotfiles/homepage/index.html"
 
