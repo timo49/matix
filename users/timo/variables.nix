@@ -18,7 +18,7 @@
   menu = "rofi";
 
   # Hyprpaper (Wallpaper)
-  wallpaper= "forest-green.png"; # external/theme/wallpaper
+  wallpaper= "lachs.png"; # external/theme/wallpaper
 
   # Git Configuration
   gitUser = "GluttonMain";
