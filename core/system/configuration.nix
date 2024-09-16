@@ -108,6 +108,9 @@ in
     };
   };
 
+  # Enable the user-level service manager to start PipeWire automatically
+  systemd.user.services.pipewire.wantedBy = [ "default.target" ];
+  systemd.user.services.pipewire-pulse.wantedBy = [ "default.target" ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
