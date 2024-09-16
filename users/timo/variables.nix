@@ -1,17 +1,17 @@
 {
   # System Information
-  username = "matteo";
+  username = "timo";
   keyMap = "at";
 
   # Theme
-  colorScheme = "gruvbox-dark-soft";
+  colorScheme = "silk-dark";
   polarity = "dark";
   opacity = "0.7";
   rounding = "15";
   borderWidth = "0";
 
   # Hyprland
-  resolution = "1920x1080@60";
+  resolution = "2560x1600@60";
   terminal = "kitty";
   browser = "qutebrowser";
   fileManager = "dolphin";
@@ -21,8 +21,8 @@
   wallpaper= "forest-green.png"; # external/theme/wallpaper
 
   # Git Configuration
-  gitUser = "Permafrozen";
-  gitMail = "m8tt8o@gmail.com";
+  gitUser = "GluttonMain";
+  gitMail = "frozenkill.hd@gmail.com";
   defaultBranch = "main";
 
 }
