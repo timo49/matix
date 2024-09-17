@@ -206,6 +206,7 @@ in {
 
       layerrule = blur,waybar
       layerrule = blur,wofi
+      layerrule = blur,qutebrowser
 
       windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
 
