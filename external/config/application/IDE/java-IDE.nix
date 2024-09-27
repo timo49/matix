@@ -2,6 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    # ciscoPacketTracer8
+    jetbrains.idea-ultimate
   ];
 }

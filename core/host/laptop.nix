@@ -29,9 +29,10 @@
     ../../external/config/application/notes/obsidian.nix
     ../../external/config/application/discord/vesktop.nix
     ../../external/config/application/bottom/bottom.nix
-    ../../external/config/application/IDE/idea-ultimate.nix
+    ../../external/config/application/IDE/java-IDE.nix
+    ../../external/config/application/IDE/rust-IDE.nix
     ../../external/config/application/music/spotube.nix
-    #../../external/config/application/CISCO/packetTracer.nix
+    ../../external/config/application/CISCO/packetTracer.nix
 
   ];
 }
