@@ -7,6 +7,7 @@ in
 
   environment.systemPackages = with pkgs; [
     fastfetch
+    bc
   ];
 
   home-manager.sharedModules = [{

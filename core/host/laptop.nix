@@ -33,6 +33,7 @@
     ../../external/config/application/IDE/rust-IDE.nix
     ../../external/config/application/music/spotube.nix
     ../../external/config/application/CISCO/packetTracer.nix
+    ../../external/config/application/notes/libreoffice.nix
 
   ];
 }
