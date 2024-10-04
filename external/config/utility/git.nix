@@ -1,7 +1,7 @@
 { config, pkgs, ...}:
 
 let
-  user = import ../../../users/user.nix;
+  user = import "${builtins.getEnv "PWD"}/users/user.nix";
   vars = import ../../../users/${user.user}/variables.nix;
 in {
 
