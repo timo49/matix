@@ -17,7 +17,7 @@
 
   outputs = inputs@{ nixpkgs, home-manager, stylix, fenix, ...}:
     let
-      user = import ./users/user.nix;
+      user = import "${builtins.getEnv "PWD"}/users/user.nix";
       vars = import ./users/${user.user}/variables.nix;
       lib = nixpkgs.lib;
       system = "x86_64-linux";
