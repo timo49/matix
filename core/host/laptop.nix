@@ -21,6 +21,7 @@
 
     # Utility
     ../../external/config/utility/git.nix
+    ../../external/config/utility/kanata.nix
     ../../external/config/application/virtualisation/quickemu.nix
 
     # Apps
@@ -34,6 +35,9 @@
     ../../external/config/application/music/spotube.nix
     ../../external/config/application/CISCO/packetTracer.nix
     ../../external/config/application/notes/libreoffice.nix
+    #../../external/config/application/gaming/minecraft.nix
+    ../../external/config/application/communication/element.nix
+    ../../external/config/application/drawing/kuion.nix
 
   ];
 }

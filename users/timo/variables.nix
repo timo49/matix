@@ -1,14 +1,25 @@
+let
+  #current Themename
+  current = import "${builtins.getEnv "PWD"}/users/timo/themes/currentTheme.nix";
+  #Themes
+  theme = import ./themes/${current.theme};
+in
 {
+    
   # System Information
   username = "timo";
   keyMap = "at";
-
+  
   # Theme
-  colorScheme = "silk-dark";
-  polarity = "dark";
-  opacity = "0.7";
-  rounding = "15";
-  borderWidth = "0";
+  colorScheme = "${theme.colorScheme}";
+  polarity = "${theme.polarity}";
+  opacity = "${theme.opacity}";
+  rounding = "${theme.rounding}";
+  borderWidth = "${theme.borderWidth}";
+
+  # Hyprpaper (Wallpaper)
+  wallpaper= "${theme.wallpaper}";# external/theme/wallpaper
+
 
   # Hyprland
   resolution = "2560x1600@60";
@@ -17,12 +28,8 @@
   fileManager = "dolphin";
   menu = "rofi";
 
-  # Hyprpaper (Wallpaper)
-  wallpaper= "lachs.png"; # external/theme/wallpaper
-
   # Git Configuration
   gitUser = "GluttonMain";
   gitMail = "frozenkill.hd@gmail.com";
   defaultBranch = "main";
-
 }

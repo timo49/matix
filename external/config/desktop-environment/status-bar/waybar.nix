@@ -95,6 +95,7 @@ in {
         "clock": {
           "format": "󱑆 {:%H:%M }",
           "format-alt": "󱑆 {:%a, %d. %b  %H:%M }",
+          "tooltip": false
        },
 
         "wireplumber": {
