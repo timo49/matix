@@ -1,0 +1,15 @@
+[SddmGreeterTheme]
+Name=Custom sddm theme
+Description=custom sddm theme
+Author=Timo 49
+License=GPL-3.0-or-later
+Type=sddm-theme
+Version=1.2
+Website=https://github.com/timo49/custom-sddm-theme
+Screenshot=Preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=frozenkill.hd@gmail.com
+Theme-Id=sddm-custom-theme
+Theme-API=2.11

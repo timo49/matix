@@ -15,8 +15,5 @@ in
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  home.sessionPath = [
-        "$HOME/.modular-nixos-configuration/bin"
-      ];
-
+  home.sessionPath = [ "$HOME/.modular-nixos-configuration/bin" ];
 }

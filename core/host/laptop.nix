@@ -11,6 +11,7 @@
     ../../external/config/desktop-environment/wallpaper-setter/hyprpaper.nix
     ../../external/config/desktop-environment/notification-daemon/dunst.nix
     ../../external/config/desktop-environment/app-launcher/rofi-wayland.nix
+    ../../external/config/desktop-environment/display-manager/default.nix
 
     # Terminal Environment
     ../../external/config/terminal/emulator/kitty.nix
