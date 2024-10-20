@@ -49,6 +49,7 @@ Column {
             model: userModel
             currentIndex: model.lastIndex
             textRole: "name"
+            displayText: ""
             hoverEnabled: true
             onActivated: {
                 username.text = currentText
@@ -61,7 +62,7 @@ Column {
                     text: model.realName != "" ? model.realName : model.name
                     font.pointSize: root.font.pointSize * 0.8
                     font.capitalization: Font.Capitalize
-                    color: selectUser.highlightedIndex === index ? "#444" : root.palette.highlight
+                    color: selectUser.highlightedIndex === index ? config.BackgroundColor : root.palette.highlight
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignHCenter
                 }
@@ -77,7 +78,7 @@ Column {
                     height: parent.height
                     anchors.left: parent.left
                     anchors.verticalCenter: parent.verticalCenter
-                    anchors.leftMargin: selectUser.height * 0.125
+                    anchors.leftMargin: selectUser.height * 0.0125
                     icon.height: parent.height * 0.25
                     icon.width: parent.height * 0.25
                     enabled: false
@@ -107,7 +108,7 @@ Column {
 
                 background: Rectangle {
                     radius: config.RoundCorners / 2
-                    color: "#444"
+                    color: config.BackgroundColor
                     layer.enabled: true
                     layer.effect: DropShadow {
                         transparentBorder: true
@@ -161,7 +162,7 @@ Column {
                 }
             ]
 
-        }
+          }
 
         TextField {
             id: username
@@ -178,7 +179,7 @@ Column {
                 color: "transparent"
                 border.color: root.palette.text
                 border.width: parent.activeFocus ? 2 : 1
-                radius: config.RoundCorners || 0
+                //radius: config.RoundCorners || 0
             }
             Keys.onReturnPressed: loginButton.clicked()
             KeyNavigation.down: password
@@ -226,7 +227,7 @@ Column {
                 color: "transparent"
                 border.color: root.palette.text
                 border.width: parent.activeFocus ? 2 : 1
-                radius: config.RoundCorners || 0
+                //radius: config.RoundCorners || 0
             }
             Keys.onReturnPressed: loginButton.clicked()
             KeyNavigation.down: revealSecret
@@ -453,7 +454,7 @@ Column {
 
             contentItem: Text {
                 text: parent.text
-                color: "#444"
+                color: config.BackgroundColor
                 font.pointSize: root.font.pointSize
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
@@ -462,9 +463,9 @@ Column {
 
             background: Rectangle {
                 id: buttonBackground
-                color: "white"
+                color: config.AccentColor
                 opacity: 0.2
-                radius: config.RoundCorners || 0
+                //radius: config.RoundCorners || 0
             }
 
             states: [
@@ -478,7 +479,7 @@ Column {
                     }
                     PropertyChanges {
                         target: loginButton.contentItem
-                        color: "#444"
+                        color: config.BackgroundColor
                     }
                 },
                 State {
@@ -492,7 +493,7 @@ Column {
                     PropertyChanges {
                         target: loginButton.contentItem
                         opacity: 1
-                        color: "#444"
+                        color: config.BackgroundColor
                     }
                 },
                 State {
@@ -506,7 +507,7 @@ Column {
                     PropertyChanges {
                         target: loginButton.contentItem
                         opacity: 1
-                        color: "#444"
+                        color: config.BackgroundColor
                     }
                 },
                 State {

@@ -25,12 +25,27 @@ Column {
     spacing: 0
     width: parent.width / 2
 
-    Label {
-        anchors.horizontalCenter: parent.horizontalCenter
-        font.pointSize: config.HeaderText !=="" ? root.font.pointSize * 3 : 0
-        color: root.palette.text
-        renderType: Text.QtRendering
-        text: config.HeaderText
+    Row {
+      id: headerRow
+      spacing: 10
+      anchors.horizontalCenter: parent.horizontalCenter
+
+      Image {
+            source: config.PathToHeaderImage // Replace with the actual image path
+            width: parent.height// Adjust width as needed
+            height: parent.height // Adjust height as needed
+            z: 3
+            
+            fillMode: Image.PreserveAspectFit
+            mipmap: true
+      }
+      Label {
+          font.pointSize: config.HeaderText !=="" ? root.font.pointSize * 3 : 0
+          font.bold: true
+          color: root.palette.text
+          renderType: Text.QtRendering
+          text: config.HeaderText
+      }
     }
 
     Label {
