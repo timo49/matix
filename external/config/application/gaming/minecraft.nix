@@ -2,6 +2,10 @@
 
 {
   environment.systemPackages = with pkgs; [
-    minecraft
+    hmcl
+    openfx
+    gamescope
   ];
+  programs.java.enable = true;
+  programs.gamescope.enable = true;
 }

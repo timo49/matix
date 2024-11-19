@@ -36,9 +36,10 @@
     ../../external/config/application/music/spotube.nix
     ../../external/config/application/CISCO/packetTracer.nix
     ../../external/config/application/notes/libreoffice.nix
-    #../../external/config/application/gaming/minecraft.nix
+    ../../external/config/application/gaming/minecraft.nix
     ../../external/config/application/communication/element.nix
     ../../external/config/application/drawing/kuion.nix
+    ../../external/config/application/game-engine/default.nix
 
   ];
 }

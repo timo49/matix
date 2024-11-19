@@ -13,7 +13,7 @@
   )
 
   (defalias
-    esclmeta (tap-hold 100 100 esc lmeta)
+    esclmeta (tap-hold 175 175 esc lmeta)
   )
 
   (deflayer base
