@@ -13,6 +13,7 @@ let
       "kuion"
       "obsidian"
       "libreoffice"
+      "qutebrowser" # browser
 
       # virtualization
       "virt-manager"
