@@ -15,33 +15,38 @@
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, stylix, fenix, ...}:
+  outputs = { nixpkgs, ... }@inputs:
     let
       user = import "${builtins.getEnv "PWD"}/users/user.nix";
-      vars = import ./users/${user.user}/variables.nix;
+      settings = import ./users/${user.user}/settings.nix;
       lib = nixpkgs.lib;
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system}; #package architecture for homemanager#
+      pkgs = nixpkgs.legacyPackages.${system}; #package architecture for homemanager
+      args = {
+        inherit settings;
+      };
     in {
     nixosConfigurations = {
       nixos = lib.nixosSystem {
         inherit system;
+        specialArgs = args;
         modules = [
           ./core/system/configuration.nix
 
-          stylix.nixosModules.stylix
-          
-           home-manager.nixosModules.home-manager
-           {
-             home-manager.useGlobalPkgs = true;
-             home-manager.useUserPackages = true;
-             home-manager.users.${vars.username} = import ./core/system/home.nix;
-            
-           }
+          inputs.stylix.nixosModules.stylix
+          inputs.home-manager.nixosModules.home-manager
+          {
+           home-manager = {
+             useGlobalPkgs = true;
+             useUserPackages = true;
+             users.${settings.username} = import ./core/system/home.nix;
+             extraSpecialArgs = args;
+           };
+          }
            ({ pkgs, ... }: {
             
             environment.systemPackages = [ 
-              fenix.packages.${system}.complete.toolchain
+              inputs.fenix.packages.${system}.complete.toolchain
             ];
            })
         ];

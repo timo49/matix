@@ -1,8 +1,7 @@
-{ config, pkgs, ... }:
+{ config, pkgs, settings, ... }:
 
 let
   user = import "${builtins.getEnv "PWD"}/users/user.nix";
-  vars = import ../../users/${user.user}/variables.nix;
 in
 {
   imports = [
@@ -50,17 +49,17 @@ in
 
   # Configure keymap in X11
   services.xserver.xkb = {
-    layout = vars.keyMap;
+    layout = settings.keyMap;
     variant = "";
   };
 
   # Set console keymap to de
-  console.keyMap = "de"; #vars.keyMap;
+  console.keyMap = "de"; #settings.keyMap;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.${vars.username} = {
+  users.users.${settings.username} = {
     isNormalUser = true;
-    description = vars.username;
+    description = settings.username;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
 

@@ -1,13 +1,9 @@
-{ config, pkgs, ... }:
+{ config, pkgs, settings, ... }:
 
-let
-  user = import "${builtins.getEnv "PWD"}/users/user.nix";
-  vars = import ../../users/${user.user}/variables.nix;
-in
 {
   # Information what to manage
-  home.username = vars.username;
-  home.homeDirectory = "/home/${vars.username}";
+  home.username = settings.username;
+  home.homeDirectory = "/home/${settings.username}";
 
   # Home Manager release for this config, do not change without reading release notes!!!
   home.stateVersion = "24.05";
