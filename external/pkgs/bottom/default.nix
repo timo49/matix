@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     bottom
+    vitetris
   ];
 
   home-manager.sharedModules = [{
@@ -10,4 +11,5 @@
       enable = true;
     };
   }];
+  services.openssh.enable = true;
 }

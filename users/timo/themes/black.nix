@@ -1,5 +1,5 @@
 {
-  colorScheme = "silk-dark";
+  colorScheme = "dracula";
   polarity = "dark";
   opacity = "0.7";
   rounding = "15";

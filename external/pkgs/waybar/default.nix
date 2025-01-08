@@ -44,11 +44,11 @@
     }
 
     #workspaces button.active {
-      color: #${config.lib.stylix.colors.base04};
+      color: #${config.lib.stylix.colors.base05};
       border-radius: ${settings.rounding}px;
-      background: #${config.lib.stylix.colors.base03};
-      border-top: 2px solid #${config.lib.stylix.colors.base03};
-      border-bottom: 2px solid #${config.lib.stylix.colors.base03};
+      background: #${config.lib.stylix.colors.base01};
+      border-top: 2px solid #${config.lib.stylix.colors.base01};
+      border-bottom: 2px solid #${config.lib.stylix.colors.base01};
     }
     '';
 

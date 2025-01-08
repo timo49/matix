@@ -5,6 +5,7 @@ let
   imps = [
       # applications
       "IDEs"
+      "mysql-workbench"
       "unityhub"
       "discord"
       "element"
@@ -14,10 +15,12 @@ let
       "obsidian"
       "libreoffice"
       "qutebrowser" # browser
+      # "CISCO" # cisco packet tracer 8.2.2
 
       # virtualization
       "virt-manager"
       "quickemu"
+      "docker"
 
       # desktop-environment
       "rofi" # app launcher

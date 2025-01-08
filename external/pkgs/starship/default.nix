@@ -23,47 +23,47 @@ in
 
     home.file.".config/starship.toml".text = ''
       format = """\
-      [](bg:#${base00} fg:#${base01})\
-      [ ](bg:#${base01} fg:#${base05})\
-      [](fg:#${base01} bg:#${base02})\
+      [](bg:#${base00} fg:#${base04})\
+      [ ](bg:#${base04} fg:#${base00})\
+      [](fg:#${base04} bg:#${base03})\
       $time\
-      [](fg:#${base02} bg:#${base03})\
+      [](fg:#${base03} bg:#${base02})\
       $directory\
-      [](fg:#${base03} bg:#${base04})\
+      [](fg:#${base02} bg:#${base01})\
       $git_branch\
       $git_status\
       $git_metrics\
-      [](fg:#${base04} bg:#${base00})\
+      [](fg:#${base01} bg:#${base00})\
       $character\
       """
       
       [directory]
       format = "[  $path ]($style)"
-      style = "fg:#${base05} bg:#${base03}"
+      style = "fg:#${base00} bg:#${base02}"
 
       [git_branch]
       format = '[ $symbol$branch(:$remote_branch) ]($style)'
       symbol = "  "
-      style = "fg:#${base00} bg:#${base04}"
+      style = "fg:#${base05} bg:#${base01}"
 
       [git_status]
       format = '[$all_status]($style)'
-      style = "fg:#${base00} bg:#${base04}"
+      style = "fg:#${base05} bg:#${base01}"
 
       [git_metrics]
       format = "([+$added]($added_style))[]($added_style)"
-      added_style = "fg:#${base00} bg:#${base04}"
-      deleted_style = "fg:#${base00} bg:#${base04}"
+      added_style = "fg:#${base05} bg:#${base01}"
+      deleted_style = "fg:#${base05} bg:#${base01}"
       disabled = false
 
       [hg_branch]
       format = "[ $symbol$branch ]($style)"
       symbol = " "
-      style = "fg:#${base00} bg:#${base04}"
+      style = "fg:#${base05} bg:#${base01}"
       
       [cmd_duration]
       format = "[ 󰔚 $duration ]($style)"
-      style = "fg:#${base05} bg:#${base00}"
+      style = "fg:#${base00} bg:#${base05}"
       
       [character]
       success_symbol = '[ ➜](fg:#${base0B}) '
@@ -72,8 +72,8 @@ in
       [time]
       disabled = false
       time_format = "%R" # Hour:Minute Format
-      style = "bg:#${base02}"
-      format = '[[ 󱑍 $time ](bg:#${base02} fg:#${base05})]($style)'
+      style = "bg:#${base03}"
+      format = '[[ 󱑍 $time ](bg:#${base03} fg:#${base00})]($style)'
     '';
   }];
 }

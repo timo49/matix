@@ -15,6 +15,7 @@
       };
 
       extraConfig = ''
+        background_blur 0
         background_opacity ${settings.opacity}
         font_family family = "Hack Nerd Font"
         shell fish
