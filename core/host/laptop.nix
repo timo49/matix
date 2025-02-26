@@ -5,17 +5,18 @@ let
   imps = [
       # applications
       "IDEs"
-      "mysql-workbench"
+      "datagrip"
       "unityhub"
       "discord"
       "element"
       "minecraft"
+      "steam"
       "spotube"
       "kuion"
       "obsidian"
       "libreoffice"
       "qutebrowser" # browser
-      # "CISCO" # cisco packet tracer 8.2.2
+      "CISCO" # cisco packet tracer 8.2.2
 
       # virtualization
       "virt-manager"
