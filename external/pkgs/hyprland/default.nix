@@ -58,8 +58,8 @@
       decoration {
           rounding = ${settings.rounding}
 
-          active_opacity = 1.0
-          inactive_opacity = 1.0
+          active_opacity = ${settings.opacity}
+          inactive_opacity = ${settings.opacity}
           
           shadow {
               enabled = false
@@ -71,10 +71,16 @@
 
           blur {
               enabled = true
-              size = 9
-              passes = 1
+              size = 7
+              passes = 4
+
+              xray = true
+              noise = 0.15
               
-              vibrancy = 0.1696
+              contrast = -1
+              vibrancy_darkness = 1
+              brightness = 1
+              vibrancy = -1
           }
       }
 

@@ -18,6 +18,7 @@
         background_blur 0
         background_opacity ${settings.opacity}
         font_family family = "Hack Nerd Font"
+        font_size 15
         shell fish
         confirm_os_window_close 0
       '';

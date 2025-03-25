@@ -32,23 +32,22 @@
 
         # --- Colors --- #
 
-        base00 = "rgba(${config.lib.stylix.colors.base00-rgb-r}, ${config.lib.stylix.colors.base00-rgb-g}, ${config.lib.stylix.colors.base00-rgb-b}, ${settings.opacity})"
-        base01 = "rgba(${config.lib.stylix.colors.base01-rgb-r}, ${config.lib.stylix.colors.base01-rgb-g}, ${config.lib.stylix.colors.base01-rgb-b}, ${settings.opacity})"
-        base02 = "rgba(${config.lib.stylix.colors.base02-rgb-r}, ${config.lib.stylix.colors.base02-rgb-g}, ${config.lib.stylix.colors.base02-rgb-b}, ${settings.opacity})"
-        base03 = "rgba(${config.lib.stylix.colors.base03-rgb-r}, ${config.lib.stylix.colors.base03-rgb-g}, ${config.lib.stylix.colors.base03-rgb-b}, ${settings.opacity})"
-        base04 = "rgba(${config.lib.stylix.colors.base04-rgb-r}, ${config.lib.stylix.colors.base04-rgb-g}, ${config.lib.stylix.colors.base04-rgb-b}, ${settings.opacity})"
-        base05 = "rgba(${config.lib.stylix.colors.base05-rgb-r}, ${config.lib.stylix.colors.base05-rgb-g}, ${config.lib.stylix.colors.base05-rgb-b}, ${settings.opacity})"
-        base06 = "rgba(${config.lib.stylix.colors.base06-rgb-r}, ${config.lib.stylix.colors.base06-rgb-g}, ${config.lib.stylix.colors.base06-rgb-b}, ${settings.opacity})"
-        base07 = "rgba(${config.lib.stylix.colors.base07-rgb-r}, ${config.lib.stylix.colors.base07-rgb-g}, ${config.lib.stylix.colors.base07-rgb-b}, ${settings.opacity})"
-        base08 = "rgba(${config.lib.stylix.colors.base08-rgb-r}, ${config.lib.stylix.colors.base08-rgb-g}, ${config.lib.stylix.colors.base08-rgb-b}, ${settings.opacity})"
-        base09 = "rgba(${config.lib.stylix.colors.base09-rgb-r}, ${config.lib.stylix.colors.base09-rgb-g}, ${config.lib.stylix.colors.base09-rgb-b}, ${settings.opacity})"
-        base0A = "rgba(${config.lib.stylix.colors.base0A-rgb-r}, ${config.lib.stylix.colors.base0A-rgb-g}, ${config.lib.stylix.colors.base0A-rgb-b}, ${settings.opacity})"
-        base0B = "rgba(${config.lib.stylix.colors.base0B-rgb-r}, ${config.lib.stylix.colors.base0B-rgb-g}, ${config.lib.stylix.colors.base0B-rgb-b}, ${settings.opacity})"
-        base0C = "rgba(${config.lib.stylix.colors.base0C-rgb-r}, ${config.lib.stylix.colors.base0C-rgb-g}, ${config.lib.stylix.colors.base0C-rgb-b}, ${settings.opacity})"
-        base0D = "rgba(${config.lib.stylix.colors.base0D-rgb-r}, ${config.lib.stylix.colors.base0D-rgb-g}, ${config.lib.stylix.colors.base0D-rgb-b}, ${settings.opacity})"
-        base0E = "rgba(${config.lib.stylix.colors.base0E-rgb-r}, ${config.lib.stylix.colors.base0E-rgb-g}, ${config.lib.stylix.colors.base0E-rgb-b}, ${settings.opacity})"
-        base0F = "rgba(${config.lib.stylix.colors.base0F-rgb-r}, ${config.lib.stylix.colors.base0F-rgb-g}, ${config.lib.stylix.colors.base0F-rgb-b}, ${settings.opacity})"
-
+        base00 = "rgba(${config.lib.stylix.colors.base00-rgb-r}, ${config.lib.stylix.colors.base00-rgb-g}, ${config.lib.stylix.colors.base00-rgb-b})"
+        base01 = "rgba(${config.lib.stylix.colors.base01-rgb-r}, ${config.lib.stylix.colors.base01-rgb-g}, ${config.lib.stylix.colors.base01-rgb-b})"
+        base02 = "rgba(${config.lib.stylix.colors.base02-rgb-r}, ${config.lib.stylix.colors.base02-rgb-g}, ${config.lib.stylix.colors.base02-rgb-b})"
+        base03 = "rgba(${config.lib.stylix.colors.base03-rgb-r}, ${config.lib.stylix.colors.base03-rgb-g}, ${config.lib.stylix.colors.base03-rgb-b})"
+        base04 = "rgba(${config.lib.stylix.colors.base04-rgb-r}, ${config.lib.stylix.colors.base04-rgb-g}, ${config.lib.stylix.colors.base04-rgb-b})"
+        base05 = "rgba(${config.lib.stylix.colors.base05-rgb-r}, ${config.lib.stylix.colors.base05-rgb-g}, ${config.lib.stylix.colors.base05-rgb-b})"
+        base06 = "rgba(${config.lib.stylix.colors.base06-rgb-r}, ${config.lib.stylix.colors.base06-rgb-g}, ${config.lib.stylix.colors.base06-rgb-b})"
+        base07 = "rgba(${config.lib.stylix.colors.base07-rgb-r}, ${config.lib.stylix.colors.base07-rgb-g}, ${config.lib.stylix.colors.base07-rgb-b})"
+        base08 = "rgba(${config.lib.stylix.colors.base08-rgb-r}, ${config.lib.stylix.colors.base08-rgb-g}, ${config.lib.stylix.colors.base08-rgb-b})"
+        base09 = "rgba(${config.lib.stylix.colors.base09-rgb-r}, ${config.lib.stylix.colors.base09-rgb-g}, ${config.lib.stylix.colors.base09-rgb-b})"
+        base0A = "rgba(${config.lib.stylix.colors.base0A-rgb-r}, ${config.lib.stylix.colors.base0A-rgb-g}, ${config.lib.stylix.colors.base0A-rgb-b})"
+        base0B = "rgba(${config.lib.stylix.colors.base0B-rgb-r}, ${config.lib.stylix.colors.base0B-rgb-g}, ${config.lib.stylix.colors.base0B-rgb-b})"
+        base0C = "rgba(${config.lib.stylix.colors.base0C-rgb-r}, ${config.lib.stylix.colors.base0C-rgb-g}, ${config.lib.stylix.colors.base0C-rgb-b})"
+        base0D = "rgba(${config.lib.stylix.colors.base0D-rgb-r}, ${config.lib.stylix.colors.base0D-rgb-g}, ${config.lib.stylix.colors.base0D-rgb-b})"
+        base0E = "rgba(${config.lib.stylix.colors.base0E-rgb-r}, ${config.lib.stylix.colors.base0E-rgb-g}, ${config.lib.stylix.colors.base0E-rgb-b})"
+        base0F = "rgba(${config.lib.stylix.colors.base0F-rgb-r}, ${config.lib.stylix.colors.base0F-rgb-g}, ${config.lib.stylix.colors.base0F-rgb-b})"
         # Text color of the completion widget. May be a single color to use for
         # all columns or a list of three colors, one for each column.
         c.colors.completion.fg = base05

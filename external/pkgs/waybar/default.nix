@@ -31,7 +31,12 @@
     window#waybar {
       background: rgba(${config.lib.stylix.colors.base00-rgb-r}, ${config.lib.stylix.colors.base00-rgb-g}, ${config.lib.stylix.colors.base00-rgb-b}, ${settings.opacity});
       color: #${config.lib.stylix.colors.base05};
-      border: ${settings.borderWidth}px solid #${config.lib.stylix.colors.base03};
+      border: 10px solid transparent;
+      padding: 15px;
+      border-image-source: url("home/timo/border.png");
+      border-image-slice: 30;
+      border-image-repeat: round;
+      /*border: ${settings.borderWidth}px solid #${config.lib.stylix.colors.base03};*/
     }
 
     tooltip {
