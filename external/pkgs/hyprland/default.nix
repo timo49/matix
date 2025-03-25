@@ -217,7 +217,7 @@
       windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
 
       # Qutebrowser Transparency
-      windowrulev2 = opacity ${settings.opacity}, org.qutebrowser.qutebrowser:title:^(home - qutebrowser)$
+      # windowrulev2 = opacity ${settings.opacity}, org.qutebrowser.qutebrowser:title:^(home - qutebrowser)$
 
       # Obsidian Transparence
       # windowrule = opacity ${settings.opacity}, ^(obsidian)$

@@ -16,7 +16,7 @@
 
       extraConfig = ''
         background_blur 0
-        background_opacity ${settings.opacity}
+        background_opacity 1
         font_family family = "Hack Nerd Font"
         font_size 15
         shell fish
