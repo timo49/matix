@@ -6,7 +6,7 @@ let
       # applications
       "IDEs"
       "datagrip"
-      "unityhub"
+      # "unityhub" f unity
       "discord"
       "element"
       "minecraft"

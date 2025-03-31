@@ -128,6 +128,7 @@
 
           touchpad {
               natural_scroll = false
+              disable_while_typing = false
           }
       }
 
@@ -221,6 +222,9 @@
 
       # Obsidian Transparence
       # windowrule = opacity ${settings.opacity}, ^(obsidian)$
+
+      # Scene Builder
+      windowrulev2 = stayfocused,class:^(com.oracle.javafx.scenebuilder.app.SceneBuilderApp)$
     '';
     };
   }];

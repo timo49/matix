@@ -4,9 +4,7 @@
   environment.systemPackages = with pkgs; [
     # JAVA
     jetbrains.idea-ultimate
-    openjfx17
-    jdk8
-    glib
+    scenebuilder
     
     # HTML / CSS / JS / PHP
     jetbrains.webstorm
@@ -16,4 +14,9 @@
     jetbrains.rust-rover
     gccgo14
   ];
+
+  programs.java = {
+    enable = true;
+    package = (pkgs.jdk21.override { enableJavaFX = true; });
+  };
 }

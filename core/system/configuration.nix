@@ -72,11 +72,16 @@ in
     wget
     nurl
     vim
+    lazygit
+    fzf
+    yazi
+    nh
   ];
 
   # Font Packages
   fonts.packages = with pkgs; [
-    nerdfonts
+    nerd-fonts.hack
+    nerd-fonts.symbols-only
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-emoji
@@ -107,6 +112,9 @@ in
       };
     };
   };
+
+  # disable blackscreen when laptop-lid closes
+  services.logind.lidSwitch = "ignore";
 
   # Enable the user-level service manager to start PipeWire automatically
   systemd.user.services.pipewire.wantedBy = [ "default.target" ];
