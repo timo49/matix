@@ -8,6 +8,7 @@
     
     # HTML / CSS / JS / PHP
     jetbrains.webstorm
+    jetbrains.phpstorm
     php
     
     # RUST

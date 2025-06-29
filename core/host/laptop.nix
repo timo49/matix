@@ -6,7 +6,7 @@ let
       # applications
       "IDEs"
       "datagrip"
-      # "unityhub" f unity
+      "unityhub" #f unity
       "discord"
       "element"
       "minecraft"
@@ -43,6 +43,7 @@ let
       # utility
       "git" # version manager
       "kanata" # keyboard manager
+      # "print"
   ];
 in
 {

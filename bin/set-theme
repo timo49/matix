@@ -10,3 +10,6 @@ if [ "$1" = 'matteo' ]; then
     theme = \""$2".nix\";
 }" > ~/.modular-nixos-configuration/users/matteo/themes/currentTheme.nix
 fi
+cd ~/.modular-nixos-configuration
+sudo nixos-rebuild --impure switch --flake .
+reboot
