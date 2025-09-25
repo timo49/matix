@@ -17,6 +17,7 @@ let
       "libreoffice"
       "qutebrowser" # browser
       "CISCO" # cisco packet tracer 8.2.2
+      "conda"
 
       # virtualization
       "virt-manager"

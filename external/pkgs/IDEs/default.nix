@@ -7,13 +7,13 @@
     scenebuilder
     
     # HTML / CSS / JS / PHP
-    jetbrains.webstorm
-    jetbrains.phpstorm
-    php
+    # jetbrains.webstorm
+    # jetbrains.phpstorm
+    # php
     
     # RUST
-    jetbrains.rust-rover
-    gccgo14
+    # jetbrains.rust-rover
+    # gccgo14
   ];
 
   programs.java = {

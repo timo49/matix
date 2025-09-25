@@ -114,7 +114,7 @@ in
   };
 
   # disable blackscreen when laptop-lid closes
-  services.logind.lidSwitch = "ignore";
+  services.logind.settings.Login.HandleLidSwitch = "ignore";
 
   # Enable the user-level service manager to start PipeWire automatically
   systemd.user.services.pipewire.wantedBy = [ "default.target" ];

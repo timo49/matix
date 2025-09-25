@@ -133,7 +133,7 @@
       }
 
       gestures {
-          workspace_swipe = false
+          workspace = false
       }
 
       # Example per-device config
