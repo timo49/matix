@@ -7,7 +7,8 @@
     scenebuilder
     
     # HTML / CSS / JS / PHP
-    # jetbrains.webstorm
+    jetbrains.webstorm
+    node2nix
     # jetbrains.phpstorm
     # php
     

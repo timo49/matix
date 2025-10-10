@@ -18,6 +18,7 @@ let
       "qutebrowser" # browser
       "CISCO" # cisco packet tracer 8.2.2
       "conda"
+      "vscode"
 
       # virtualization
       "virt-manager"
