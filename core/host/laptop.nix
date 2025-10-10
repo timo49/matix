@@ -33,7 +33,7 @@ let
       "hyprpaper" # wallpaper setter
       "hyprland" # window manager
       "stylix" # color manager
-      "vnc"
+      "remote-desktop"
 
       # terminal
       "neovim" # editor
