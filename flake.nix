@@ -4,11 +4,13 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     stylix.url = "github:danth/stylix";
+    awww.url = "git+https://codeberg.org/LGFae/awww";
 
     home-manager = { 
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     fenix = {
       url = "github:nix-community/fenix/monthly";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -24,6 +26,7 @@
       pkgs = nixpkgs.legacyPackages.${system}; #package architecture for homemanager
       args = {
         inherit settings;
+        inherit inputs;
       };
     in {
     nixosConfigurations = {
@@ -47,7 +50,7 @@
             
             environment.systemPackages = [ 
               inputs.fenix.packages.${system}.complete.toolchain
-            ];
+              ];
            })
         ];
       };

@@ -30,7 +30,7 @@ let
       "sddm" # diplay manager
       "dunst" # norification deamon
       "waybar" # status bar
-      "hyprpaper" # wallpaper setter
+      "awww" # wallpaper setter
       "hyprland" # window manager
       "stylix" # color manager
       "remote-desktop"

@@ -29,7 +29,7 @@
       $menu = ${settings.menu} -show drun
 
       # Autostart
-      exec-once = waybar & hyprpaper
+      exec-once = waybar & awww-start
 
       # Enviroment Variables
       env = XCURSOR_SIZE,24
